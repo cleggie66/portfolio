@@ -1,0 +1,15 @@
+.footer-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: auto;
+    padding: 20px 0;
+}
+
+.footer-icons>a>i {
+    color: #454545;
+    font-size: 42px;
+}
+
+.footer-icons>a>i:hover {
+    color: #7b7b7b;
+}
