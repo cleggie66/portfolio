@@ -1,0 +1,58 @@
+.icon1,
+.icon2,
+.icon3,
+.icon4,
+.icon5 {
+    position: absolute;
+    height: 30px;
+    transition: right 1s ease-in-out;
+}
+
+.project-line:hover .icon1,
+.project-line:hover .icon2,
+.project-line:hover .icon3,
+.project-line:hover .icon4,
+.project-line:hover .icon5 {
+    transition: right .5s ease-in-out;
+}
+
+.icon1 {
+    z-index: 100;
+    right: 10px;
+}
+
+.icon2 {
+    z-index: 99;
+    right: 20px;
+}
+
+.project-line:hover .icon2 {
+    right: 45px;
+}
+
+.icon3 {
+    z-index: 98;
+    right: 30px;
+}
+
+.project-line:hover .icon3 {
+    right: 80px;
+}
+
+.icon4 {
+    z-index: 97;
+    right: 40px;
+}
+
+.project-line:hover .icon4 {
+    right: 115px;
+}
+
+.icon5 {
+    z-index: 96;
+    right: 50px;
+}
+
+.project-line:hover .icon5 {
+    right: 150px;
+}

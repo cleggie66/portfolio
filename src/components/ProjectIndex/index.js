@@ -1,5 +1,8 @@
 import { useState } from "react"
+import javascript from "../../media/icons/javascript.png"
 import "./ProjectIndex.css"
+import "./ProjectIndexIcons.css"
+
 
 function ProjectIndex() {
     const [project1, setProject1] = useState("project-preview-active");
@@ -12,26 +15,39 @@ function ProjectIndex() {
             <div className="projects-list">
                 <h2>Projects</h2>
                 <hr />
-                <h3
-                    className="list-mycare"
-                    onMouseEnter={() => setProject1("project-preview-active")}
-                    onMouseLeave={() => setProject1("project-preview-idle")}
-                >
-                    MyCare
-                </h3>
+                <div className="project-line">
+                    <h3
+                        onMouseEnter={() => {
+                            setProject1("project-preview-active")
+                            setProject2("project-preview-idle")
+                            setProject3("project-preview-idle")
+                        }}
+                    >
+                        MyCare
+                    </h3>
+                    <img src={javascript} alt="icon" className="icon1" />
+                    <img src={javascript} alt="icon" className="icon2" />
+                    <img src={javascript} alt="icon" className="icon3" />
+                    <img src={javascript} alt="icon" className="icon4" />
+                    <img src={javascript} alt="icon" className="icon5" />
+                </div>
                 <hr />
                 <h3
-                    className="list-mycare"
-                    onMouseEnter={() => setProject2("project-preview-active")}
-                    onMouseLeave={() => setProject2("project-preview-idle")}
+                    onMouseEnter={() => {
+                        setProject1("project-preview-idle")
+                        setProject2("project-preview-active")
+                        setProject3("project-preview-idle")
+                    }}
                 >
                     Banter
                 </h3>
                 <hr />
                 <h3
-                    className="list-mycare"
-                    onMouseEnter={() => setProject3("project-preview-active")}
-                    onMouseLeave={() => setProject3("project-preview-idle")}
+                    onMouseEnter={() => {
+                        setProject1("project-preview-idle")
+                        setProject2("project-preview-idle")
+                        setProject3("project-preview-active")
+                    }}
                 >
                     AirBn2B
                 </h3>
