@@ -13,6 +13,6 @@
 
 .nav-link:hover {
     color: #45454500;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: .5px;
     -webkit-text-stroke-color: #454545;
 }
