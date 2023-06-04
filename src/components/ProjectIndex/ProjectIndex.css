@@ -4,12 +4,16 @@
     padding-top: 100px;
 }
 
+.projects-list>a {
+    text-decoration: none;
+}
+
 .projects-list>h2 {
     font-size: 54px;
     color: #45454500;
     padding-left: 10px;
     -webkit-text-stroke-width: .2px;
-        -webkit-text-stroke-color: #454545;
+    -webkit-text-stroke-color: #454545;
 }
 
 .project-line {
@@ -20,16 +24,57 @@
     padding: 10px 0;
 }
 
-.project-line>h3 {
+.project-title {
     font-size: 32px;
     color: #454545;
     padding-left: 10px;
 }
 
-.project-line>h3:hover {
+.project-title:hover {
     color: #45454500;
     -webkit-text-stroke-width: .2px;
     -webkit-text-stroke-color: #454545;
+}
+
+.project-image-container {
+    position: relative;
+    width: 45vw;
+    height: 25.3125vw;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call-to-action {
+    font-size: 64px;
+    color: #454545;
+    position: absolute;
+    text-align: center;
+    z-index: 20;
+    top: 11vw;
+    right: 14.5vw;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.project-image-container:hover .call-to-action {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.white-cover {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    z-index: 15;
+    transition: all .5s ease-in-out;
+}
+
+.project-image-container:hover .white-cover {
+    background-color: #ffffff96;
+    transition: all .5s ease-in-out;
 }
 
 .project-preview-idle {
@@ -54,15 +99,4 @@
     width: 25vw;
     height: 1px;
     background-color: #454545;
-}
-
-.project-image-container {
-    position: relative;
-    width: 45vw;
-    height: 25.3125vw;
-    overflow: hidden;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
