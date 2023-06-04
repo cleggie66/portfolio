@@ -3,7 +3,7 @@
 * {
     font-family: 'Bebas Neue', sans-serif;
     margin: 0;
-    cursor: url("./media/portfolio-pointer.png"), crosshair;
+    cursor: url("./media/portfolio-pointer.png") 15 15, crosshair;
 }
 
 .page {

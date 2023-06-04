@@ -16,6 +16,8 @@
     z-index: 99;
     right: 25px;
     transition: right 1.2s ease-in-out;
+    transition-delay: .3s;
+    transition-property: right;
 }
 
 .project-line:hover .icon2 {
@@ -27,6 +29,8 @@
     z-index: 98;
     right: 35px;
     transition: right 1.3s ease-in-out;
+    transition-delay: .3s;
+    transition-property: right;
 }
 
 .project-line:hover .icon3 {
@@ -38,6 +42,8 @@
     z-index: 97;
     right: 45px;
     transition: right 1.4s ease-in-out;
+    transition-delay: .3s;
+    transition-property: right;
 }
 
 .project-line:hover .icon4 {
@@ -49,9 +55,26 @@
     z-index: 96;
     right: 55px;
     transition: right 1.5s ease-in-out;
+    transition-delay: .3s;
+    transition-property: right;
 }
 
 .project-line:hover .icon5 {
     right: 155px;
     transition: right .5s ease-in-out;
+}
+
+.arrow {
+    color: #454545;
+    position: absolute;
+    z-index: 96;
+    right: 100px;
+    transition: color 1s ease-in-out;
+    transition-delay: 2s;
+    transition-property: color;
+}
+
+.project-line:hover .arrow {
+    color: #45454500;
+    transition: color .2s ease-in-out;
 }

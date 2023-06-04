@@ -37,6 +37,7 @@ function ProjectIndex() {
                             setProjectLink("https://my-care.onrender.com");
                         }}>
                         <h3 className="project-title">MyCare</h3>
+                        <i className="fa-solid fa-chevron-left arrow" />
                         <img src={python} alt="icon" className="icon1" />
                         <img src={react} alt="icon" className="icon2" />
                         <img src={redux} alt="icon" className="icon3" />
@@ -56,6 +57,7 @@ function ProjectIndex() {
 
                         }}>
                         <h3 className="project-title">Banter</h3>
+                        <i className="fa-solid fa-chevron-left arrow" />
                         <img src={python} alt="icon" className="icon1" />
                         <img src={react} alt="icon" className="icon2" />
                         <img src={redux} alt="icon" className="icon3" />
@@ -75,6 +77,7 @@ function ProjectIndex() {
 
                         }}>
                         <h3 className="project-title">AirBn2B</h3>
+                        <i className="fa-solid fa-chevron-left arrow" />
                         <img src={javascript} alt="icon" className="icon1" />
                         <img src={express} alt="icon" className="icon2" />
                         <img src={react} alt="icon" className="icon3" />
