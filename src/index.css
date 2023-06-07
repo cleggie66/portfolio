@@ -7,6 +7,7 @@
 }
 
 .page {
+    position: relative;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,4 +24,29 @@
     min-height: 100%;
     z-index: -100;
     background-size: cover;
+}
+
+.pre {
+    position: absolute;
+    top: 150px;
+    background-color: pink;
+    scale: .8;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    position: absolute;
+    top: 150px;
+    background-color: rgb(255, 0, 43);
+    scale: 1;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.post {
+    background-color: rgb(192, 201, 255);
+    scale: 1.2;
+    opacity: 0;
+    transition: all 1s ease-in-out;
 }
