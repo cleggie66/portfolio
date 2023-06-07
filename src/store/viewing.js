@@ -4,7 +4,7 @@ const setActivePage = (pages, page) => {
     for (let i = 0; i < keys.length; i++) {
         let key = keys[i];
         if (newPages[key] === "active") newPages[key] = "post";
-        else if (key === page) newPages[key] = "active";
+        if (key === page) newPages[key] = "active";
     }
     return newPages;
 };

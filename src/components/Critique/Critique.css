@@ -1,0 +1,55 @@
+.critique-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #454545;
+    margin-top: 50px;
+    width: 30vw;
+}
+
+.critique-page>h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.critique-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.critique-form>label {
+    font-size: 26px;
+    margin-top: 20px;
+}
+
+.critique-form>select {
+    font-size: 22px;
+    color: #454545;
+    width: 100%;
+}
+
+.critique-form>textarea {
+    font-size: 22px;
+    color: #454545;
+    cursor: text;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.critique-form>button {
+    padding: 10px;
+    width: 100%;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #454545;
+    border: none;
+    margin-top: 20px;
+}
+
+.critique-form>button:hover {
+    color: #454545;
+    background-color: #ffffff;
+}

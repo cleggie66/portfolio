@@ -1,7 +1,7 @@
 .project-index {
     display: flex;
     align-items: center;
-    padding-top: 80px;
+    margin-top: 60px;
 }
 
 .projects-list>a {

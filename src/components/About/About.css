@@ -1,0 +1,38 @@
+.about-page {
+    width: 65vw;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: #454545;
+}
+
+.about-page-top {
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.about-page-title {
+    font-size: 54px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.about-page>ul>li {
+    list-style-type: none;
+}
+
+.about-profile-image-container {
+    min-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-right: 50px;
+}

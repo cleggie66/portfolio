@@ -28,8 +28,7 @@
 
 .pre {
     position: absolute;
-    top: 150px;
-    background-color: pink;
+    top: -60vh;
     scale: .8;
     opacity: 0;
     transition: all 1s ease-in-out;
@@ -38,15 +37,15 @@
 .active {
     position: absolute;
     top: 150px;
-    background-color: rgb(255, 0, 43);
     scale: 1;
     opacity: 1;
-    transition: all 1s ease-in-out;
+    transition: all 1.3s ease-out;
 }
 
 .post {
-    background-color: rgb(192, 201, 255);
-    scale: 1.2;
+    position: absolute;
+    top: 300px;
+    scale: 1.5;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: all 1s ease-in;
 }
