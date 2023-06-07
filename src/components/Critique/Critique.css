@@ -10,7 +10,7 @@
 .critique-page>h2 {
     font-size: 36px;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .critique-form {
@@ -29,14 +29,15 @@
     font-size: 22px;
     color: #454545;
     width: 100%;
+    border: none;
 }
 
 .critique-form>textarea {
     font-size: 22px;
     color: #454545;
-    cursor: text;
     width: 100%;
     margin-top: 20px;
+    border: none;
 }
 
 .critique-form>button {
@@ -47,9 +48,11 @@
     background-color: #454545;
     border: none;
     margin-top: 20px;
+    transition: all .3s ease-in-out;
 }
 
 .critique-form>button:hover {
     color: #454545;
     background-color: #ffffff;
+    transition: all .3s ease-in-out;
 }

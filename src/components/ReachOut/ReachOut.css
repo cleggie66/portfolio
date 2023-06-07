@@ -1,0 +1,76 @@
+.reach-out-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #454545;
+    margin-top: 30px;
+    width: 30vw;
+}
+
+.reach-out-page>h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.reach-out-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.reach-out-form>input {
+    font-size: 22px;
+    color: #454545;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+}
+
+.reach-out-form>textarea {
+    font-size: 22px;
+    color: #454545;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+}
+
+.reach-out-form>button {
+    padding: 10px;
+    width: 100%;
+    font-size: 22px;
+    color: #ffffff;
+    background-color: #454545;
+    border: none;
+    margin-top: 20px;
+    transition: all .3s ease-in-out;
+}
+
+.reach-out-form>button:hover {
+    color: #454545;
+    background-color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+.contact-icons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contact-icons>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+
+.reach-out-email {
+    color: #454545;
+}
+
+.reach-out-email:hover {
+    color: #7b7b7b;
+}

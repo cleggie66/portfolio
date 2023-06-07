@@ -10,7 +10,7 @@ function Critique({ visibility }) {
                 </h2>
                 <form className="critique-form">
                     <select>
-                        <option>Select Project</option>
+                        <option disabled selected>Select Project</option>
                         <option>MyCare</option>
                         <option>Banter</option>
                         <option>AirBn2B</option>
@@ -18,8 +18,7 @@ function Critique({ visibility }) {
                         <option>Other</option>
                     </select>
                     <textarea id="story" name="story"
-                        rows="5" cols="33">
-                        Your Feeback
+                        rows="5" cols="33" placeholder="Your Feedback">
                     </textarea>
                     <button>Send it</button>
                 </form>
