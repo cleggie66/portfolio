@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import ProjectIndex from "./components/ProjectIndex";
 import Critique from './components/Critique';
 import ReachOut from './components/ReachOut';
+import FunSettings from './components/FunSettings';
 import video from "./media/crystal-slowed.mp4";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <ProjectIndex visibility={pageState.home} />
       <Critique visibility={pageState.critique} />
       <ReachOut visibility={pageState.reachOut} />
+      <FunSettings visibility={pageState.funSettings} />
       <Footer />
       <video className="background-video" loop={true} autoPlay="autoplay" muted>
         <source src={video} type="video/mp4" />

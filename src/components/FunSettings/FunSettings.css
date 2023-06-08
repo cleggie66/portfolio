@@ -1,0 +1,10 @@
+.settings-options {
+    font-size: 22px;
+    display: flex;
+    gap: 20px;
+}
+
+.cursor-1:hover {
+    /* cursor: url("../../media/cursors/wand-magic-sparkles-solid.svg width='32' height='32'"); */
+    cursor: crosshair;
+}

@@ -1,9 +1,11 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import viewing from "./viewing"
+import settings from "./settings"
 
 const rootReducer = combineReducers({
     viewing,
+    settings
 });
 
 let enhancer;
