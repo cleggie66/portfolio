@@ -9,7 +9,7 @@ export const setCursor = (cursor) => {
 };
 
 const initialState = {
-    cursor: "cursor-circle-dark"
+    cursor: "circle-dark"
 };
 
 export default function reducer(state = initialState, action) {

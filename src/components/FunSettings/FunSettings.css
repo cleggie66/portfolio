@@ -1,10 +1,113 @@
-.settings-options {
-    font-size: 22px;
+.fun-settings-page {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    color: #454545;
+    width: 30vw;
 }
 
-.cursor-1:hover {
-    /* cursor: url("../../media/cursors/wand-magic-sparkles-solid.svg width='32' height='32'"); */
-    cursor: crosshair;
+.fun-settings-page>h2 {
+    font-size: 36px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 40px;
+}
+
+.cursor-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 400px;
+}
+
+.cursor-preview {
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.cursor-preview:hover {
+    background-color: #91919177;
+    transition: all .3s ease-in-out;
+}
+
+.theme-options {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.spice-options {
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+}
+
+.spice-options>h3 {
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 1s ease-in-out;
+}
+
+.spice-options>h3:hover {
+    background-color: #91919177;
+    transition: all .3s ease-in-out;
+}
+
+
+/* CURSORS */
+.cursor-bug {
+    cursor: url("../../media/cursors/bug.png") 15 15, crosshair;
+}
+
+.cursor-bullseye {
+    cursor: url("../../media/cursors/bullseye.png") 15 15, crosshair;
+}
+
+.cursor-circle-dark {
+    cursor: url("../../media/cursors/circle-dark.png") 15 15, crosshair;
+}
+
+.cursor-circle-light {
+    cursor: url("../../media/cursors/circle-light.png") 15 15, crosshair;
+}
+
+.cursor-classic {
+    cursor: url("../../media/cursors/classic.png") 15 15, crosshair;
+}
+
+.cursor-crosshairs {
+    cursor: url("../../media/cursors/crosshairs.png") 15 15, crosshair;
+}
+
+.cursor-fire {
+    cursor: url("../../media/cursors/fire.png") 15 15, crosshair;
+}
+
+.cursor-heart {
+    cursor: url("../../media/cursors/heart.png") 15 15, crosshair;
+}
+
+.cursor-location {
+    cursor: url("../../media/cursors/location.png") 15 15, crosshair;
+}
+
+.cursor-mouse {
+    cursor: url("../../media/cursors/mouse.png") 15 15, crosshair;
+}
+
+.cursor-smile {
+    cursor: url("../../media/cursors/smile.png") 15 15, crosshair;
+}
+
+.cursor-square {
+    cursor: url("../../media/cursors/square.png") 15 15, crosshair;
+}
+
+.cursor-star {
+    cursor: url("../../media/cursors/star.png") 15 15, crosshair;
+}
+
+.cursor-wand {
+    cursor: url("../../media/cursors/wand.png") 15 15, crosshair;
 }

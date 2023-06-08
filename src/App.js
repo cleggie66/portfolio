@@ -11,9 +11,11 @@ import video from "./media/crystal-slowed.mp4";
 
 function App() {
   const pageState = useSelector(state => state.viewing);
+  const settingsState = useSelector(state => state.settings);
+
 
   return (
-    <div className="page">
+    <div className={`page cursor-${settingsState.cursor}`}>
       <Navbar />
       <About visibility={pageState.about} />
       <ProjectIndex visibility={pageState.home} />
