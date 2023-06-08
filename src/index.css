@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+a:hover {
+    cursor: url("./media/cursors/circle-dark.png") 15 15, crosshair;
+}
+
 .page {
     position: relative;
     min-height: 100vh;
