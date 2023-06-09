@@ -27,6 +27,12 @@ a:hover {
     align-items: center;
 }
 
+.error {
+    font-size: 22px;
+    color: red;
+    margin-top: 10px;
+}
+
 .background-video-visible {
     position: fixed;
     right: 0;

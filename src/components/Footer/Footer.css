@@ -6,10 +6,21 @@
 }
 
 .footer-icons>a>i {
-    color: #454545;
     font-size: 42px;
 }
 
-.footer-icons>a>i:hover {
-    color: #7b7b7b;
+#light .footer-icons>a>i {
+    color: var(--dark-gray);
+}
+
+#dark .footer-icons>a>i {
+    color: var(--white);
+}
+
+#light .footer-icons>a>i:hover {
+    color: var(--light-purple);
+}
+
+#dark .footer-icons>a>i:hover {
+    color: var(--dark-purple);
 }

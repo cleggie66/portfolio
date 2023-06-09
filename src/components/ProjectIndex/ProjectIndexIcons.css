@@ -65,7 +65,6 @@
 }
 
 .arrow {
-    color: #454545;
     position: absolute;
     z-index: 96;
     right: 100px;
@@ -74,7 +73,15 @@
     transition-property: color;
 }
 
+#light .arrow {
+    color: var(--dark-gray);
+}
+
+#dark .arrow {
+    color: var(--white);
+}
+
 .project-line:hover .arrow {
-    color: #45454500;
+    color: #00000000;
     transition: color .2s ease-in-out;
 }

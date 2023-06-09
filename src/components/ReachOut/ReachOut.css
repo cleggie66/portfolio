@@ -2,9 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #454545;
     margin-top: 30px;
     width: 30vw;
+}
+
+#light .reach-out-page {
+    color: var(--dark-gray);
+}
+
+#dark .reach-out-page {
+    color: var(--white);
 }
 
 .reach-out-page>h2 {
@@ -22,35 +29,88 @@
 
 .reach-out-form>input {
     font-size: 22px;
-    color: #454545;
     width: 100%;
     margin-top: 20px;
     border: none;
+}
+
+#light .reach-out-form>input {
+    color: var(--dark-gray);
+}
+
+#dark .reach-out-form>input {
+    color: #ffffff;
+    background-color: var(--dark-gray);
 }
 
 .reach-out-form>textarea {
     font-size: 22px;
-    color: #454545;
     width: 100%;
     margin-top: 20px;
     border: none;
 }
 
-.reach-out-form>button {
+#light .reach-out-form>textarea {
+    color: var(--dark-gray);
+}
+
+#dark .reach-out-form>textarea {
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+.reach-out-button {
     padding: 10px;
     width: 100%;
     font-size: 22px;
-    color: #ffffff;
-    background-color: #454545;
     border: none;
     margin-top: 20px;
     transition: all .3s ease-in-out;
 }
 
-.reach-out-form>button:hover {
-    color: #454545;
-    background-color: #ffffff;
+#light .reach-out-button {
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+#dark .reach-out-button {
+    color: var(--dark-gray);
+    background-color: var(--white);
+}
+
+#light .reach-out-button:disabled {
+    color: #8c8c8c;
+    background-color: #cccccc;
+}
+
+#dark .reach-out-button:disabled {
+    color: #8c8c8c;
+    background-color: #cccccc;
+}
+
+.reach-out-button:hover {
     transition: all .3s ease-in-out;
+}
+
+#light .reach-out-button:hover:enabled {
+    color: var(--dark-gray);
+    background-color: var(--white);
+}
+
+#dark .reach-out-button:hover:enabled {
+    color: var(--white);
+    background-color: var(--dark-gray);
+}
+
+.reach-out-button-sent {
+    padding: 10px;
+    width: 100%;
+    font-size: 22px;
+    border: none;
+    margin-top: 20px;
+    transition: all .3s ease-in-out;
+    color: white;
+    background-color: rgb(42, 109, 42);
 }
 
 .contact-icons {
@@ -67,10 +127,18 @@
     font-size: 22px;
 }
 
-.reach-out-email {
-    color: #454545;
+#light .reach-out-email {
+    color: var(--dark-gray);
 }
 
-.reach-out-email:hover {
-    color: #7b7b7b;
+#dark .reach-out-email {
+    color: var(--white);
+}
+
+#light .reach-out-email:hover {
+    color: var(--light-purple);
+}
+
+#dark .reach-out-email:hover {
+    color: var(--dark-purple);
 }

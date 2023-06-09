@@ -10,10 +10,17 @@
 
 .projects-list>h2 {
     font-size: 54px;
-    color: #45454500;
+    color: #00000000;
     padding-left: 10px;
     -webkit-text-stroke-width: .2px;
-    -webkit-text-stroke-color: #454545;
+}
+
+#light .projects-list>h2 {
+    -webkit-text-stroke-color: var(--dark-gray);
+}
+
+#dark .projects-list>h2 {
+    -webkit-text-stroke-color: var(--white);
 }
 
 .project-line {
@@ -26,14 +33,28 @@
 
 .project-title {
     font-size: 32px;
-    color: #454545;
     padding-left: 10px;
 }
 
+#light .project-title {
+    color: var(--dark-gray);
+}
+
+#dark .project-title {
+    color: var(--white);
+}
+
 .project-title:hover {
-    color: #45454500;
+    color: #00000000;
     -webkit-text-stroke-width: .2px;
-    -webkit-text-stroke-color: #454545;
+}
+
+#light .project-title:hover {
+    -webkit-text-stroke-color: var(--dark-gray);
+}
+
+#dark .project-title:hover {
+    -webkit-text-stroke-color: var(--white);
 }
 
 .project-image-container {
@@ -49,7 +70,6 @@
 
 .call-to-action {
     font-size: 64px;
-    color: #454545;
     position: absolute;
     text-align: center;
     z-index: 20;
@@ -57,6 +77,14 @@
     right: 14.5vw;
     opacity: 0;
     transition: all .5s ease-in-out;
+}
+
+#light .call-to-action {
+    color: var(--dark-gray);
+}
+
+#dark .call-to-action {
+    color: var(--white);
 }
 
 .project-image-container:hover .call-to-action {
@@ -73,8 +101,15 @@
 }
 
 .project-image-container:hover .white-cover {
-    background-color: #ffffff96;
     transition: all .5s ease-in-out;
+}
+
+#light .project-image-container:hover .white-cover {
+    background-color: #ffffff91;
+}
+
+#dark .project-image-container:hover .white-cover {
+    background-color: #00000091;
 }
 
 .project-preview-idle {
@@ -98,5 +133,12 @@
     border: none;
     width: 25vw;
     height: 1px;
-    background-color: #454545;
+}
+
+#light .projects-list>hr {
+    background-color: var(--dark-gray);
+}
+
+#dark .projects-list>hr {
+    background-color: var(--white);
 }
