@@ -1,6 +1,3 @@
-import { useState } from "react";
-import "./FunSettings.css";
-
 import bugLight from "../../media/cursors/bug-light.png"
 import bullseyeLight from "../../media/cursors/bullseye-light.png"
 import circleLight from "../../media/cursors/circle-light.png"
@@ -30,75 +27,92 @@ import squareDark from "../../media/cursors/square-dark.png"
 import starDark from "../../media/cursors/star-dark.png"
 import wandDark from "../../media/cursors/wand-dark.png"
 
-
 import { setCursor, setTheme } from "../../store/settings";
 import { useDispatch, useSelector } from "react-redux";
+import "./FunSettings.css";
+
 
 function FunSettings({ visibility }) {
     const dispatch = useDispatch()
     const settingsState = useSelector(state => state.settings);
     const theme = settingsState.theme;
+    const cursor = settingsState.cursor;
+
 
     return (
         <div className={visibility}>
             <div className="fun-settings-page">
                 <h2>Choose Your Cursor</h2>
                 <div className="cursor-options">
-                    <div
-                        onClick={() => dispatch(setCursor("circle"))}>
-                        <img src={theme === "light" ? circleLight : circleDark} alt="circle" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("circle"))}>
+                        <img
+                            src={theme === "light" ? circleLight : circleDark} alt="circle"
+                            className={`cursor-preview ${cursor === "circle" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("bug"))}>
-                        <img src={theme === "light" ? bugLight : bugDark} alt="bug" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("bug"))}>
+                        <img
+                            src={theme === "light" ? bugLight : bugDark} alt="bug"
+                            className={`cursor-preview ${cursor === "bug" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("bullseye"))}>
-                        <img src={theme === "light" ? bullseyeLight : bullseyeDark} alt="bullseye" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("bullseye"))}>
+                        <img
+                            src={theme === "light" ? bullseyeLight : bullseyeDark} alt="bullseye"
+                            className={`cursor-preview ${cursor === "bullseye" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("classic"))}>
-                        <img src={theme === "light" ? classicLight : classicDark} alt="classic" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("classic"))}>
+                        <img
+                            src={theme === "light" ? classicLight : classicDark} alt="classic"
+                            className={`cursor-preview ${cursor === "classic" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("crosshairs"))}>
-                        <img src={theme === "light" ? crosshairsLight : crosshairsDark} alt="crosshairs" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("crosshairs"))}>
+                        <img
+                            src={theme === "light" ? crosshairsLight : crosshairsDark} alt="crosshairs"
+                            className={`cursor-preview ${cursor === "crosshairs" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("fire"))}>
-                        <img src={theme === "light" ? fireLight : fireDark} alt="fire" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("fire"))}>
+                        <img
+                            src={theme === "light" ? fireLight : fireDark} alt="fire"
+                            className={`cursor-preview ${cursor === "fire" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("heart"))}>
-                        <img src={theme === "light" ? heartLight : heartDark} alt="heart" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("heart"))}>
+                        <img
+                            src={theme === "light" ? heartLight : heartDark} alt="heart"
+                            className={`cursor-preview ${cursor === "heart" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("location"))}>
-                        <img src={theme === "light" ? locationLight : locationDark} alt="location" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("location"))}>
+                        <img
+                            src={theme === "light" ? locationLight : locationDark} alt="location"
+                            className={`cursor-preview ${cursor === "location" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("mouse"))}>
-                        <img src={theme === "light" ? mouseLight : mouseDark} alt="mouse" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("mouse"))}>
+                        <img
+                            src={theme === "light" ? mouseLight : mouseDark} alt="mouse"
+                            className={`cursor-preview ${cursor === "mouse" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("republic"))}>
-                        <img src={theme === "light" ? republicLight : republicDark} alt="republic" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("republic"))}>
+                        <img
+                            src={theme === "light" ? republicLight : republicDark} alt="republic"
+                            className={`cursor-preview ${cursor === "republic" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("smile"))}>
-                        <img src={theme === "light" ? smileLight : smileDark} alt="smile" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("smile"))}>
+                        <img
+                            src={theme === "light" ? smileLight : smileDark} alt="smile"
+                            className={`cursor-preview ${cursor === "smile" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("square"))}>
-                        <img src={theme === "light" ? squareLight : squareDark} alt="square" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("square"))}>
+                        <img
+                            src={theme === "light" ? squareLight : squareDark} alt="square"
+                            className={`cursor-preview ${cursor === "square" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("star"))}>
-                        <img src={theme === "light" ? starLight : starDark} alt="star" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("star"))}>
+                        <img
+                            src={theme === "light" ? starLight : starDark} alt="star"
+                            className={`cursor-preview ${cursor === "star" && "selected-cursor"}`} />
                     </div>
-                    <div
-                        onClick={() => dispatch(setCursor("wand"))}>
-                        <img src={theme === "light" ? wandLight : wandDark} alt="wand" className="cursor-preview" />
+                    <div onClick={() => dispatch(setCursor("wand"))}>
+                        <img
+                            src={theme === "light" ? wandLight : wandDark} alt="wand"
+                            className={`cursor-preview ${cursor === "wand" && "selected-cursor"}`} />
                     </div>
                 </div>
                 <h2>Choose Your Theme</h2>
@@ -106,7 +120,7 @@ function FunSettings({ visibility }) {
                     <h3
                         className={`${theme === "light" && "selected-theme"}`}
                         onClick={() => dispatch(setTheme("light"))}>
-                        
+
                         Light</h3>
                     <h3
                         className={`${theme === "dark" && "selected-theme"}`}
