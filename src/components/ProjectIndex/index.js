@@ -39,11 +39,11 @@ function ProjectIndex({ visibility }) {
                             }}>
                             <h3 className="project-title">MyCare</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={python} alt="icon" className="icon1" />
-                            <img src={react} alt="icon" className="icon2" />
-                            <img src={redux} alt="icon" className="icon3" />
-                            <img src={flask} alt="icon" className="icon4" />
-                            <img src={sqla} alt="icon" className="icon5" />
+                            <img src={"https://skillicons.dev/icons?i=python&theme=light"} alt="icon" className="icon1" />
+                            <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon2" />
+                            <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon3" />
+                            <img src={"https://skillicons.dev/icons?i=flask&theme=light"} alt="icon" className="icon4" />
+                            <img src={"https://skillicons.dev/icons?i=postgres&theme=light"} alt="icon" className="icon5" />
                         </div>
                     </a>
                     <hr />
@@ -55,15 +55,14 @@ function ProjectIndex({ visibility }) {
                                 setProject2("project-preview-active");
                                 setProject3("project-preview-idle");
                                 setProjectLink("https://banter-k9ts.onrender.com/");
-
                             }}>
                             <h3 className="project-title">Banter</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={python} alt="icon" className="icon1" />
-                            <img src={react} alt="icon" className="icon2" />
-                            <img src={redux} alt="icon" className="icon3" />
-                            <img src={flask} alt="icon" className="icon4" />
-                            <img src={sqla} alt="icon" className="icon5" />
+                            <img src={"https://skillicons.dev/icons?i=python&theme=light"} alt="icon" className="icon1" />
+                            <img src={"https://skillicons.dev/icons?i=babel&theme=light"} alt="icon" className="icon2" />
+                            <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon3" />
+                            <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon4" />
+                            <img src={"https://skillicons.dev/icons?i=flask&theme=light"} alt="icon" className="icon5" />
                         </div>
                     </a>
                     <hr />
@@ -79,11 +78,11 @@ function ProjectIndex({ visibility }) {
                             }}>
                             <h3 className="project-title">AirBn2B</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={javascript} alt="icon" className="icon1" />
-                            <img src={express} alt="icon" className="icon2" />
-                            <img src={react} alt="icon" className="icon3" />
-                            <img src={redux} alt="icon" className="icon4" />
-                            <img src={sequelize} alt="icon" className="icon5" />
+                            <img src={"https://skillicons.dev/icons?i=js&theme=light"} alt="icon" className="icon1" />
+                            <img src={"https://skillicons.dev/icons?i=express&theme=light"} alt="icon" className="icon2" />
+                            <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon3" />
+                            <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon4" />
+                            <img src={"https://skillicons.dev/icons?i=sequelize&theme=light"} alt="icon" className="icon5" />
                         </div>
                     </a>
                 </div>

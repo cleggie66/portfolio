@@ -2,8 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #454545;
     width: 30vw;
+}
+
+#light .fun-settings-page {
+    color: var(--dark-gray);
+}
+
+#dark .fun-settings-page {
+    color: var(--white);
 }
 
 .fun-settings-page>h2 {
@@ -17,17 +24,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 400px;
+    width: 380px;
 }
 
 .cursor-preview {
+    height: 30px;
     border-radius: 10px;
     padding: 10px;
     transition: all 1s ease-in-out;
 }
 
 .cursor-preview:hover {
-    background-color: #91919177;
+    background-color: var(--dark-purple);
     transition: all .3s ease-in-out;
 }
 
@@ -35,6 +43,19 @@
     display: flex;
     gap: 20px;
     font-size: 22px;
+}
+
+.theme-options>h3 {
+    border-radius: 10px;
+    padding: 8px;
+}
+
+#dark .selected-theme {
+    border: 2px solid var(--light-purple);
+}
+
+#light .selected-theme {
+    border: 2px solid var(--dark-purple);
 }
 
 .spice-options {
@@ -54,60 +75,116 @@
     transition: all .3s ease-in-out;
 }
 
-
-/* CURSORS */
-.cursor-bug {
-    cursor: url("../../media/cursors/bug.png") 15 15, crosshair;
+/* CURSORS - LIGHT */
+.cursor-bug-light {
+    cursor: url("../../media/cursors/bug-light.png") 15 15, crosshair;
 }
 
-.cursor-bullseye {
-    cursor: url("../../media/cursors/bullseye.png") 15 15, crosshair;
-}
-
-.cursor-circle-dark {
-    cursor: url("../../media/cursors/circle-dark.png") 15 15, crosshair;
+.cursor-bullseye-light {
+    cursor: url("../../media/cursors/bullseye-light.png") 15 15, crosshair;
 }
 
 .cursor-circle-light {
     cursor: url("../../media/cursors/circle-light.png") 15 15, crosshair;
 }
 
-.cursor-classic {
-    cursor: url("../../media/cursors/classic.png") 15 15, crosshair;
+.cursor-classic-light {
+    cursor: url("../../media/cursors/classic-light.png") 15 15, crosshair;
 }
 
-.cursor-crosshairs {
-    cursor: url("../../media/cursors/crosshairs.png") 15 15, crosshair;
+.cursor-crosshairs-light {
+    cursor: url("../../media/cursors/crosshairs-light.png") 15 15, crosshair;
 }
 
-.cursor-fire {
-    cursor: url("../../media/cursors/fire.png") 15 15, crosshair;
+.cursor-fire-light {
+    cursor: url("../../media/cursors/fire-light.png") 15 15, crosshair;
 }
 
-.cursor-heart {
-    cursor: url("../../media/cursors/heart.png") 15 15, crosshair;
+.cursor-heart-light {
+    cursor: url("../../media/cursors/heart-light.png") 15 15, crosshair;
 }
 
-.cursor-location {
-    cursor: url("../../media/cursors/location.png") 15 15, crosshair;
+.cursor-location-light {
+    cursor: url("../../media/cursors/location-light.png") 15 15, crosshair;
 }
 
-.cursor-mouse {
-    cursor: url("../../media/cursors/mouse.png") 15 15, crosshair;
+.cursor-mouse-light {
+    cursor: url("../../media/cursors/mouse-light.png") 15 15, crosshair;
 }
 
-.cursor-smile {
-    cursor: url("../../media/cursors/smile.png") 15 15, crosshair;
+.cursor-republic-light {
+    cursor: url("../../media/cursors/republic-light.png") 15 15, crosshair;
 }
 
-.cursor-square {
-    cursor: url("../../media/cursors/square.png") 15 15, crosshair;
+.cursor-smile-light {
+    cursor: url("../../media/cursors/smile-light.png") 15 15, crosshair;
 }
 
-.cursor-star {
-    cursor: url("../../media/cursors/star.png") 15 15, crosshair;
+.cursor-square-light {
+    cursor: url("../../media/cursors/square-light.png") 15 15, crosshair;
 }
 
-.cursor-wand {
-    cursor: url("../../media/cursors/wand.png") 15 15, crosshair;
+.cursor-star-light {
+    cursor: url("../../media/cursors/star-light.png") 15 15, crosshair;
+}
+
+.cursor-wand-light {
+    cursor: url("../../media/cursors/wand-light.png") 15 15, crosshair;
+}
+
+/* CURSORS - DARK */
+.cursor-bug-dark {
+    cursor: url("../../media/cursors/bug-dark.png") 15 15, crosshair;
+}
+
+.cursor-bullseye-dark {
+    cursor: url("../../media/cursors/bullseye-dark.png") 15 15, crosshair;
+}
+
+.cursor-circle-dark {
+    cursor: url("../../media/cursors/circle-dark.png") 15 15, crosshair;
+}
+
+.cursor-classic-dark {
+    cursor: url("../../media/cursors/classic-dark.png") 15 15, crosshair;
+}
+
+.cursor-crosshairs-dark {
+    cursor: url("../../media/cursors/crosshairs-dark.png") 15 15, crosshair;
+}
+
+.cursor-fire-dark {
+    cursor: url("../../media/cursors/fire-dark.png") 15 15, crosshair;
+}
+
+.cursor-heart-dark {
+    cursor: url("../../media/cursors/heart-dark.png") 15 15, crosshair;
+}
+
+.cursor-location-dark {
+    cursor: url("../../media/cursors/location-dark.png") 15 15, crosshair;
+}
+
+.cursor-mouse-dark {
+    cursor: url("../../media/cursors/mouse-dark.png") 15 15, crosshair;
+}
+
+.cursor-republic-dark {
+    cursor: url("../../media/cursors/republic-dark.png") 15 15, crosshair;
+}
+
+.cursor-smile-dark {
+    cursor: url("../../media/cursors/smile-dark.png") 15 15, crosshair;
+}
+
+.cursor-square-dark {
+    cursor: url("../../media/cursors/square-dark.png") 15 15, crosshair;
+}
+
+.cursor-star-dark {
+    cursor: url("../../media/cursors/star-dark.png") 15 15, crosshair;
+}
+
+.cursor-wand-dark {
+    cursor: url("../../media/cursors/wand-dark.png") 15 15, crosshair;
 }

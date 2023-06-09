@@ -7,15 +7,16 @@ import ProjectIndex from "./components/ProjectIndex";
 import Critique from './components/Critique';
 import ReachOut from './components/ReachOut';
 import FunSettings from './components/FunSettings';
-import video from "./media/crystal-slowed.mp4";
+import videoLight from "./media/backgrounds/crystal-slowed-light.mp4";
+import videoDark from "./media/backgrounds/crystal-slowed-dark.mp4";
+
 
 function App() {
   const pageState = useSelector(state => state.viewing);
   const settingsState = useSelector(state => state.settings);
 
-
   return (
-    <div className={`page cursor-${settingsState.cursor}`}>
+    <div className={`page cursor-${settingsState.cursor}-${settingsState.theme}`} id={settingsState.theme}>
       <Navbar />
       <About visibility={pageState.about} />
       <ProjectIndex visibility={pageState.home} />
@@ -23,8 +24,11 @@ function App() {
       <ReachOut visibility={pageState.reachOut} />
       <FunSettings visibility={pageState.funSettings} />
       <Footer />
-      <video className="background-video" loop={true} autoPlay="autoplay" muted>
-        <source src={video} type="video/mp4" />
+      <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
+        <source src={videoLight} type="video/mp4" />
+      </video>
+      <video className={settingsState.theme === "dark" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
+        <source src={videoDark} type="video/mp4" />
       </video>
     </div>
   );
