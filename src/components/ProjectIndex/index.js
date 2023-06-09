@@ -1,17 +1,7 @@
 import { useState } from "react"
-import { Link } from "react-router-dom"
-
-import express from "../../media/icons/express.png"
-import flask from "../../media/icons/flask.png"
-import javascript from "../../media/icons/javascript.png"
-import node from "../../media/icons/node.png"
-import postgresql from "../../media/icons/postgresql.png"
-import python from "../../media/icons/python.png"
-import react from "../../media/icons/react.png"
-import redux from "../../media/icons/redux.png"
-import sequelize from "../../media/icons/sequelize.png"
-import sqla from "../../media/icons/sqla.png"
-
+import airBn2BPreview from "../../media/project-previews/AirBn2B.mp4";
+import banterPreview from "../../media/project-previews/banter.mp4";
+import myCarePreview from "../../media/project-previews/myCare.mp4";
 import "./ProjectIndex.css"
 import "./ProjectIndexIcons.css"
 
@@ -90,18 +80,15 @@ function ProjectIndex({ visibility }) {
                     <div className="project-image-container">
                         <p className="call-to-action">VISIT WEBSITE</p>
                         <div className="white-cover" />
-                        <img src={"https://blog.artsper.com/wp-content/uploads/2022/04/New-Featured-Image-1200-x-675-6.jpg"}
-                            alt="project preview"
-                            className={`${project1}`}
-                        />
-                        <img src={"https://artincontext.org/wp-content/uploads/2021/06/Renaissance-Art-848x530.jpg"}
-                            alt="project preview"
-                            className={`${project2}`}
-                        />
-                        <img src={"https://renaissancereframed.files.wordpress.com/2021/05/b6e5d-fireintheborgo.jpg"}
-                            alt="project preview"
-                            className={`${project3}`}
-                        />
+                        <video className={`${project1}`} loop={true} autoPlay="autoplay" muted>
+                            <source src={myCarePreview} type="video/mp4" />
+                        </video>
+                        <video className={`${project2}`} loop={true} autoPlay="autoplay" muted>
+                            <source src={banterPreview} type="video/mp4" />
+                        </video>
+                        <video className={`${project3}`} loop={true} autoPlay="autoplay" muted>
+                            <source src={airBn2BPreview} type="video/mp4" />
+                        </video>
                     </div>
                 </a>
             </div>
