@@ -16,8 +16,8 @@ export const setTheme = (theme) => {
 };
 
 const initialState = {
-    cursor: "circle-dark",
-    theme: "dark"
+    cursor: "circle",
+    theme: "light"
 };
 
 export default function reducer(state = initialState, action) {
