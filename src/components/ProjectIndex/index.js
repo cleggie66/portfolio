@@ -1,7 +1,8 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import airBn2BPreview from "../../media/project-previews/AirBn2B.mp4";
 import banterPreview from "../../media/project-previews/banter.mp4";
 import myCarePreview from "../../media/project-previews/myCare.mp4";
+import Ping from "ping.js";
 import "./ProjectIndex.css"
 import "./ProjectIndexIcons.css"
 
@@ -11,6 +12,16 @@ function ProjectIndex({ visibility }) {
     const [project2, setProject2] = useState("project-preview-idle");
     const [project3, setProject3] = useState("project-preview-idle");
     const [projectLink, setProjectLink] = useState("https://my-care.onrender.com");
+
+    useEffect(() => {
+        const p = new Ping();
+
+        p.ping("https://click-me-kutu.onrender.com");
+        p.ping("https://caleb-airbnb.onrender.com");
+        p.ping("https://my-care.onrender.com");
+        p.ping("https://banter-k9ts.onrender.com");
+
+    }, [])
 
     return (
         <div className={visibility}>
