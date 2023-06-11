@@ -16,10 +16,34 @@ function ProjectIndex({ visibility }) {
     useEffect(() => {
         const p = new Ping();
 
-        p.ping("https://click-me-kutu.onrender.com");
-        p.ping("https://caleb-airbnb.onrender.com");
-        p.ping("https://my-care.onrender.com");
-        p.ping("https://banter-k9ts.onrender.com");
+        p.ping("https://click-me-kutu.onrender.com")
+            .then(data => {
+                console.log("Successful ping: " + data);
+            })
+            .catch(data => {
+                console.error("Ping failed: " + data);
+            })
+        p.ping("https://caleb-airbnb.onrender.com")
+            .then(data => {
+                console.log("Successful ping: " + data);
+            })
+            .catch(data => {
+                console.error("Ping failed: " + data);
+            })
+        p.ping("https://my-care.onrender.com")
+            .then(data => {
+                console.log("Successful ping: " + data);
+            })
+            .catch(data => {
+                console.error("Ping failed: " + data);
+            })
+        p.ping("https://banter-k9ts.onrender.com")
+            .then(data => {
+                console.log("Successful ping: " + data);
+            })
+            .catch(data => {
+                console.error("Ping failed: " + data);
+            })
 
     }, [])
 
