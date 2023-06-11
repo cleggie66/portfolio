@@ -57,7 +57,7 @@ function Critique({ visibility }) {
                         value={project}
                         onChange={(e) => setProject(e.target.value)}
                     >
-                        <option disabled selected value="">Select Project</option>
+                        <option disabled value="">Select Project</option>
                         <option>MyCare</option>
                         <option>Banter</option>
                         <option>AirBn2B</option>

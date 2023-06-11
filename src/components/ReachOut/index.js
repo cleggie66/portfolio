@@ -89,11 +89,11 @@ function ReachOut({ visibility }) {
                 </form>
                 <div className="contact-icons">
                     <div>
-                        <h3><i class="fa-solid fa-phone" /> Phone</h3>
+                        <h3><i className="fa-solid fa-phone" /> Phone</h3>
                         630-485-8750
                     </div>
                     <div>
-                        <h3><i class="fa-solid fa-envelope" /> Email</h3>
+                        <h3><i className="fa-solid fa-envelope" /> Email</h3>
                         <a href="mailto: caleb@cleghorn.org" target="_blank" rel="noopener noreferrer" className="reach-out-email">caleb@cleghorn.org</a>
                     </div>
                 </div>

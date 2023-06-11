@@ -23,6 +23,11 @@
     padding-bottom: 50px;
 }
 
+.about-page-top-text {
+    display: flex;
+    flex-direction: column;
+}
+
 .about-page-title {
     font-size: 54px;
     font-weight: bold;
