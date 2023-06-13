@@ -1,10 +1,16 @@
 import { useEffect, useState } from "react"
+import Ping from "ping.js";
 import airBn2BPreview from "../../media/project-previews/AirBn2B.mp4";
 import banterPreview from "../../media/project-previews/banter.mp4";
 import myCarePreview from "../../media/project-previews/myCare.mp4";
-import Ping from "ping.js";
+import myCareLogoLight from "../../media/project-logos/myCare-logo-light.gif";
+import myCareLogoDark from "../../media/project-logos/myCare-logo-dark.gif";
+import banterLogoLight from "../../media/project-logos/banter-logo-light.gif";
+import banterLogoDark from "../../media/project-logos/banter-logo-dark.gif";
+import airbnbLogo from "../../media/project-logos/AirBn2B-logo.png";
 import "./ProjectIndex.css"
 import "./ProjectIndexIcons.css"
+import { useSelector } from "react-redux";
 
 
 function ProjectIndex({ visibility }) {
@@ -12,6 +18,9 @@ function ProjectIndex({ visibility }) {
     const [project2, setProject2] = useState("project-preview-idle");
     const [project3, setProject3] = useState("project-preview-idle");
     const [projectLink, setProjectLink] = useState("https://my-care.onrender.com");
+    const settingsState = useSelector(state => state.settings);
+    const theme = settingsState.theme;
+
 
     useEffect(() => {
         const p = new Ping();
@@ -69,6 +78,10 @@ function ProjectIndex({ visibility }) {
                             <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon3" />
                             <img src={"https://skillicons.dev/icons?i=flask&theme=light"} alt="icon" className="icon4" />
                             <img src={"https://skillicons.dev/icons?i=postgres&theme=light"} alt="icon" className="icon5" />
+                            <div className="project-description">
+                                <p>A medical portal for patients to solve their healthcare needs and take action</p>
+                                <img src={theme === "light" ? myCareLogoLight : myCareLogoDark} alt="project logo" className='project-preview-logo' />
+                            </div>
                         </div>
                     </a>
                     <hr />
@@ -88,6 +101,10 @@ function ProjectIndex({ visibility }) {
                             <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon3" />
                             <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon4" />
                             <img src={"https://skillicons.dev/icons?i=flask&theme=light"} alt="icon" className="icon5" />
+                            <div className="project-description">
+                                <p>A Slack clone where users can chat through direct messages and channels</p>
+                                <img src={theme === "light" ? banterLogoLight : banterLogoDark} alt="project logo" className='project-preview-logo' />
+                            </div>
                         </div>
                     </a>
                     <hr />
@@ -108,6 +125,10 @@ function ProjectIndex({ visibility }) {
                             <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon3" />
                             <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon4" />
                             <img src={"https://skillicons.dev/icons?i=sequelize&theme=light"} alt="icon" className="icon5" />
+                            <div className="project-description">
+                                <p>A web app clone of Airbnb, made for intuitive and simple access to vacation rentals</p>
+                                <img src={airbnbLogo} alt="project logo" className='project-preview-logo' />
+                            </div>
                         </div>
                     </a>
                 </div>

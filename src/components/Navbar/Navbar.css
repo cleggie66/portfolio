@@ -5,8 +5,11 @@
     padding: 20px 0;
 }
 
-.nav-link {
-    font-size: 38px;
+.nav-link>h2{
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
@@ -36,15 +39,6 @@
     align-items: center;
 }
 
-.nav-sub-alink {
-    position: relative;
-    color: #00000000;
-    text-decoration: none;
-    transition: color 1s ease-in-out;
-    transition-delay: 1s;
-    transition-property: color;
-}
-
 .nav-sub-links {
     position: absolute;
     top: 90px;
@@ -52,6 +46,17 @@
     gap: 20px;
     font-size: 28px;
     color: #00000000;
+    transition: color 1s ease-in-out;
+    transition-delay: 1s;
+    transition-property: color;
+}
+
+.nav-sub-alink {
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    color: #00000000;
+    text-decoration: none;
     transition: color 1s ease-in-out;
     transition-delay: 1s;
     transition-property: color;
@@ -83,6 +88,8 @@
 
 .nav-sub-link {
     position: relative;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .white-bg {

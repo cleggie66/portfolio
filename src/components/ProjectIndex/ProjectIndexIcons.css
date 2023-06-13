@@ -81,7 +81,8 @@
     color: var(--white);
 }
 
-.project-line:hover .arrow {
+#light .project-line:hover .arrow,
+#dark .project-line:hover .arrow{
     color: #00000000;
     transition: color .2s ease-in-out;
 }

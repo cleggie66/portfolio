@@ -103,115 +103,143 @@
 }
 
 /* CURSORS - LIGHT */
-.cursor-bug-light {
+.cursor-bug-light,
+.cursor-bug-light :link {
     cursor: url("../../media/cursors/bug-light.png") 15 15, crosshair;
 }
 
-.cursor-bullseye-light {
+.cursor-bullseye-light,
+.cursor-bullseye-light :link {
     cursor: url("../../media/cursors/bullseye-light.png") 15 15, crosshair;
 }
 
-.cursor-circle-light {
+.cursor-circle-light,
+.cursor-circle-light :link {
     cursor: url("../../media/cursors/circle-light.png") 15 15, crosshair;
 }
 
-.cursor-classic-light {
+.cursor-classic-light,
+.cursor-classic-light :link {
     cursor: url("../../media/cursors/classic-light.png") 15 15, crosshair;
 }
 
-.cursor-crosshairs-light {
+.cursor-crosshairs-light,
+.cursor-crosshairs-light :link {
     cursor: url("../../media/cursors/crosshairs-light.png") 15 15, crosshair;
 }
 
-.cursor-fire-light {
+.cursor-fire-light,
+.cursor-fire-light :link {
     cursor: url("../../media/cursors/fire-light.png") 15 15, crosshair;
 }
 
-.cursor-heart-light {
+.cursor-heart-light,
+.cursor-heart-light :link {
     cursor: url("../../media/cursors/heart-light.png") 15 15, crosshair;
 }
 
-.cursor-location-light {
+.cursor-location-light,
+.cursor-location-light :link {
     cursor: url("../../media/cursors/location-light.png") 15 15, crosshair;
 }
 
-.cursor-mouse-light {
+.cursor-mouse-light,
+.cursor-mouse-light :link {
     cursor: url("../../media/cursors/mouse-light.png") 15 15, crosshair;
 }
 
-.cursor-republic-light {
+.cursor-republic-light,
+.cursor-republic-light :link {
     cursor: url("../../media/cursors/republic-light.png") 15 15, crosshair;
 }
 
-.cursor-smile-light {
+.cursor-smile-light,
+.cursor-smile-light :link {
     cursor: url("../../media/cursors/smile-light.png") 15 15, crosshair;
 }
 
-.cursor-square-light {
+.cursor-square-light,
+.cursor-square-light :link {
     cursor: url("../../media/cursors/square-light.png") 15 15, crosshair;
 }
 
-.cursor-star-light {
+.cursor-star-light,
+.cursor-star-light :link {
     cursor: url("../../media/cursors/star-light.png") 15 15, crosshair;
 }
 
-.cursor-wand-light {
+.cursor-wand-light,
+.cursor-wand-light :link {
     cursor: url("../../media/cursors/wand-light.png") 15 15, crosshair;
 }
 
 /* CURSORS - DARK */
-.cursor-bug-dark {
+.cursor-bug-dark,
+.cursor-bug-dark :link {
     cursor: url("../../media/cursors/bug-dark.png") 15 15, crosshair;
 }
 
-.cursor-bullseye-dark {
+.cursor-bullseye-dark,
+.cursor-bullseye-dark :link {
     cursor: url("../../media/cursors/bullseye-dark.png") 15 15, crosshair;
 }
 
-.cursor-circle-dark {
+.cursor-circle-dark,
+.cursor-circle-dark :link {
     cursor: url("../../media/cursors/circle-dark.png") 15 15, crosshair;
 }
 
-.cursor-classic-dark {
+.cursor-classic-dark,
+.cursor-classic-dark :link {
     cursor: url("../../media/cursors/classic-dark.png") 15 15, crosshair;
 }
 
-.cursor-crosshairs-dark {
+.cursor-crosshairs-dark,
+.cursor-crosshairs-dark :link {
     cursor: url("../../media/cursors/crosshairs-dark.png") 15 15, crosshair;
 }
 
-.cursor-fire-dark {
+.cursor-fire-dark,
+.cursor-fire-dark :link {
     cursor: url("../../media/cursors/fire-dark.png") 15 15, crosshair;
 }
 
-.cursor-heart-dark {
+.cursor-heart-dark,
+.cursor-heart-dark :link {
     cursor: url("../../media/cursors/heart-dark.png") 15 15, crosshair;
 }
 
-.cursor-location-dark {
+.cursor-location-dark,
+.cursor-location-dark :link {
     cursor: url("../../media/cursors/location-dark.png") 15 15, crosshair;
 }
 
-.cursor-mouse-dark {
+.cursor-mouse-dark,
+.cursor-mouse-dark :link {
     cursor: url("../../media/cursors/mouse-dark.png") 15 15, crosshair;
 }
 
-.cursor-republic-dark {
+.cursor-republic-dark,
+.cursor-republic-dark :link {
     cursor: url("../../media/cursors/republic-dark.png") 15 15, crosshair;
 }
 
-.cursor-smile-dark {
+.cursor-smile-dark,
+.cursor-smile-dark :link {
     cursor: url("../../media/cursors/smile-dark.png") 15 15, crosshair;
 }
 
-.cursor-square-dark {
+.cursor-square-dark,
+.cursor-square-dark :link {
     cursor: url("../../media/cursors/square-dark.png") 15 15, crosshair;
 }
 
-.cursor-star-dark {
+.cursor-star-dark,
+.cursor-star-dark :link {
     cursor: url("../../media/cursors/star-dark.png") 15 15, crosshair;
 }
 
-.cursor-wand-dark {
+.cursor-wand-dark,
+.cursor-wand-dark :link {
     cursor: url("../../media/cursors/wand-dark.png") 15 15, crosshair;
 }

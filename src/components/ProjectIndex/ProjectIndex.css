@@ -9,7 +9,9 @@
 }
 
 .projects-list>h2 {
-    font-size: 54px;
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 42px;
+    text-transform: uppercase;
     color: #00000000;
     padding-left: 10px;
     -webkit-text-stroke-width: .2px;
@@ -28,11 +30,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 1s ease-in-out;
+}
+
+.project-line:hover {
+    padding-bottom: calc(25.3125vw - 221px);
+    transition: all 1s ease-in-out;
 }
 
 .project-title {
-    font-size: 32px;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 900;
     padding-left: 10px;
 }
 
@@ -55,6 +66,32 @@
 
 #dark .project-title:hover {
     -webkit-text-stroke-color: var(--white);
+}
+
+.project-description {
+    position: absolute;
+    top: 60px;
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+#light .project-description {
+    color: var(--dark-gray);
+}
+
+#dark .project-description {
+    color: var(--white);
+}
+
+.project-line:hover .project-description {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.project-preview-logo {
+    width: 150px;
+    padding-top: 20px;
 }
 
 .project-image-container {

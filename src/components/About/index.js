@@ -10,15 +10,15 @@ function About({ visibility }) {
                     </div>
                     <div className="about-page-top-text">
                         <p className='about-page-title'>Hey, I'm Caleb!</p>
-                        <p> I'm a software engineer that can't get enough of fixing issues. My experience in media and live production helped me grasp the art of problem-solving and brought to life my passion for making things work. As a software engineer, I am able to apply what I have learned and carry on my passion for solving the puzzle.</p>
+                        <p className="about-page-text"> I'm a software engineer that can't get enough of fixing issues. My experience in media and live production helped me grasp the art of problem-solving and brought to life my passion for making things work. As a software engineer, I am able to apply what I have learned and carry on my passion for solving the puzzle.</p>
                     </div>
                 </div>
                 <ul>
                     <li className='about-page-title'>I love what I do, and a little of what I can do is:</li>
-                    <li>⚡️ Build frontends using Javascript, React, Redux, HTML, CSS</li>
-                    <li>⚡️ Develop backends using Python, Javascript, Flask, Express, SQL, PostgreSQL</li>
-                    <li>⚡️ Make designs come to life with the Adobe suite</li>
-                    <li>⚡️ Stay cool under pressure</li>
+                    <li className="about-page-text">⚡️ Build frontends using Javascript, React, Redux, HTML, CSS</li>
+                    <li className="about-page-text">⚡️ Develop backends using Python, Javascript, Flask, Express, SQL, PostgreSQL</li>
+                    <li className="about-page-text">⚡️ Make designs come to life with the Adobe suite</li>
+                    <li className="about-page-text">⚡️ Stay cool under pressure</li>
                 </ul>
             </div>
         </div>

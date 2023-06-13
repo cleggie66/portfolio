@@ -1,3 +1,4 @@
+import resume from "../../media/caleb-cleghorn-resume.pdf"
 import "./Footer.css"
 
 function Footer() {
@@ -12,6 +13,9 @@ function Footer() {
             </a>
             <a href="mailto: caleb@cleghorn.org" target="_blank" rel="noopener noreferrer">
                 <i className="fa-solid fa-envelope" />
+            </a>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+                <i className="fa-solid fa-file" />
             </a>
         </div>
     )
