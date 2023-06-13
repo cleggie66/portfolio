@@ -15,9 +15,9 @@ function About({ visibility }) {
                 </div>
                 <ul>
                     <li className='about-page-title'>I love what I do, and a little of what I can do is:</li>
-                    <li className="about-page-text">⚡️ Build frontends using Javascript, React, Redux, HTML, CSS</li>
-                    <li className="about-page-text">⚡️ Develop backends using Python, Javascript, Flask, Express, SQL, PostgreSQL</li>
-                    <li className="about-page-text">⚡️ Make designs come to life with the Adobe suite</li>
+                    <li className="about-page-text">⚡️ Build frontends using <b>Javascript, React, Redux, HTML, CSS</b></li>
+                    <li className="about-page-text">⚡️ Develop backends using <b>Python, Javascript, Flask, Express, SQL, PostgreSQL</b></li>
+                    <li className="about-page-text">⚡️ Make designs come to life with the <b>Adobe suite</b></li>
                     <li className="about-page-text">⚡️ Stay cool under pressure</li>
                 </ul>
             </div>

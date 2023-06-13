@@ -18,7 +18,7 @@
 }
 
 #light .footer-icons>a>i:hover {
-    color: var(--light-purple);
+    color: var(--light-blue);
 }
 
 #dark .footer-icons>a>i:hover {
