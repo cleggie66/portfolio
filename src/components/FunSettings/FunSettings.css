@@ -91,16 +91,34 @@
     font-size: 22px;
 }
 
-.spice-options>h3 {
-    border-radius: 5px;
-    padding: 5px;
+
+
+
+.spice-preview {
+    border-radius: 10px;
+    padding: 10px;
     transition: all 1s ease-in-out;
+    border: 2px solid #00000000;
 }
 
-.spice-options>h3:hover {
-    background-color: #91919177;
+#light .spice-preview:hover {
+    background-color: var(--light-blue);
     transition: all .3s ease-in-out;
 }
+
+#dark .spice-preview:hover {
+    background-color: var(--dark-purple);
+    transition: all .3s ease-in-out;
+}
+
+#dark .selected-spice {
+    border: 2px solid var(--light-purple);
+}
+
+#light .selected-spice {
+    border: 2px solid var(--dark-blue);
+}
+
 
 /* CURSORS - LIGHT */
 .cursor-bug-light,

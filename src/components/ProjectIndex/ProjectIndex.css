@@ -69,6 +69,7 @@
 }
 
 .project-description {
+    width: 90%;
     position: absolute;
     top: 60px;
     padding-left: 10px;
@@ -89,6 +90,12 @@
     transition: all 1s ease-in-out;
 }
 
+.project-description>p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
 .project-preview-logo {
     width: 150px;
     padding-top: 20px;
@@ -104,6 +111,15 @@
     flex-direction: column;
     justify-content: center;
 }
+
+#light .project-image-container {
+    box-shadow: 0px 0px 10px 1px #b9b9b9;
+}
+
+#dark .project-image-container {
+    box-shadow: 0px 0px 10px 1px #5e5e5e;
+}
+
 
 .call-to-action {
     font-size: 64px;

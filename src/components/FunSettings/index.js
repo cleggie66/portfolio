@@ -30,6 +30,7 @@ import wandDark from "../../media/cursors/wand-dark.png"
 import { setCursor, setTheme } from "../../store/settings";
 import { useDispatch, useSelector } from "react-redux";
 import "./FunSettings.css";
+import { useState } from "react"
 
 
 function FunSettings({ visibility }) {
@@ -37,6 +38,7 @@ function FunSettings({ visibility }) {
     const settingsState = useSelector(state => state.settings);
     const theme = settingsState.theme;
     const cursor = settingsState.cursor;
+    const [favSpiceGirl, setFavSpiceGirl] = useState("");
 
 
     return (
@@ -129,10 +131,20 @@ function FunSettings({ visibility }) {
                 </div>
                 <h2>Choose Your Favorite Spice Girl</h2>
                 <div className="spice-options">
-                    <h3>Emma</h3>
-                    <h3>Mel B</h3>
-                    <h3>Melanie C</h3>
-                    <h3>Geri</h3>
+                    <h3
+                        className={`spice-preview ${favSpiceGirl === "emma" && "selected-spice"}`}
+                        onClick={() => setFavSpiceGirl("emma")}>
+                        Emma</h3>
+                    <h3
+                        className={`spice-preview ${favSpiceGirl === "melb" && "selected-spice"}`}
+                        onClick={() => setFavSpiceGirl("melb")}>
+                        Mel B</h3>
+                    <h3 className={`spice-preview ${favSpiceGirl === "melc" && "selected-spice"}`}
+                        onClick={() => setFavSpiceGirl("melc")}>
+                        Melanie C</h3>
+                    <h3 className={`spice-preview ${favSpiceGirl === "geri" && "selected-spice"}`}
+                        onClick={() => setFavSpiceGirl("geri")}>
+                        Geri</h3>
                 </div>
             </div>
         </div>

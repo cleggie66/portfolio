@@ -20,6 +20,7 @@ function ProjectIndex({ visibility }) {
     const [projectLink, setProjectLink] = useState("https://my-care.onrender.com");
     const settingsState = useSelector(state => state.settings);
     const theme = settingsState.theme;
+    const iconTheme = `${theme === "light" ? "dark" : "light"}`
 
 
     useEffect(() => {
@@ -73,11 +74,11 @@ function ProjectIndex({ visibility }) {
                             }}>
                             <h3 className="project-title">MyCare</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={"https://skillicons.dev/icons?i=python&theme=light"} alt="icon" className="icon1" />
-                            <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon2" />
-                            <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon3" />
-                            <img src={"https://skillicons.dev/icons?i=flask&theme=light"} alt="icon" className="icon4" />
-                            <img src={"https://skillicons.dev/icons?i=postgres&theme=light"} alt="icon" className="icon5" />
+                            <img src={`https://skillicons.dev/icons?i=python&theme=${iconTheme}`} alt="icon" className="icon1" />
+                            <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon2" />
+                            <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon3" />
+                            <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon4" />
+                            <img src={`https://skillicons.dev/icons?i=postgres&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className="project-description">
                                 <p>A medical portal for patients to solve their healthcare needs and take action</p>
                                 <img src={theme === "light" ? myCareLogoLight : myCareLogoDark} alt="project logo" className='project-preview-logo' />
@@ -96,11 +97,11 @@ function ProjectIndex({ visibility }) {
                             }}>
                             <h3 className="project-title">Banter</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={"https://skillicons.dev/icons?i=python&theme=light"} alt="icon" className="icon1" />
-                            <img src={"https://skillicons.dev/icons?i=babel&theme=light"} alt="icon" className="icon2" />
-                            <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon3" />
-                            <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon4" />
-                            <img src={"https://skillicons.dev/icons?i=flask&theme=light"} alt="icon" className="icon5" />
+                            <img src={`https://skillicons.dev/icons?i=python&theme=${iconTheme}`} alt="icon" className="icon1" />
+                            <img src={`https://skillicons.dev/icons?i=babel&theme=${iconTheme}`} alt="icon" className="icon2" />
+                            <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon3" />
+                            <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon4" />
+                            <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className="project-description">
                                 <p>A Slack clone where users can chat through direct messages and channels</p>
                                 <img src={theme === "light" ? banterLogoLight : banterLogoDark} alt="project logo" className='project-preview-logo' />
@@ -120,11 +121,11 @@ function ProjectIndex({ visibility }) {
                             }}>
                             <h3 className="project-title">AirBn2B</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={"https://skillicons.dev/icons?i=js&theme=light"} alt="icon" className="icon1" />
-                            <img src={"https://skillicons.dev/icons?i=express&theme=light"} alt="icon" className="icon2" />
-                            <img src={"https://skillicons.dev/icons?i=react&theme=light"} alt="icon" className="icon3" />
-                            <img src={"https://skillicons.dev/icons?i=redux&theme=light"} alt="icon" className="icon4" />
-                            <img src={"https://skillicons.dev/icons?i=sequelize&theme=light"} alt="icon" className="icon5" />
+                            <img src={`https://skillicons.dev/icons?i=js&theme=${iconTheme}`} alt="icon" className="icon1" />
+                            <img src={`https://skillicons.dev/icons?i=express&theme=${iconTheme}`} alt="icon" className="icon2" />
+                            <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon3" />
+                            <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon4" />
+                            <img src={`https://skillicons.dev/icons?i=sequelize&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className="project-description">
                                 <p>A web app clone of Airbnb, made for intuitive and simple access to vacation rentals</p>
                                 <img src={airbnbLogo} alt="project logo" className='project-preview-logo' />
