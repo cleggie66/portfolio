@@ -15,6 +15,7 @@
 }
 
 .reach-out-page>h2 {
+    text-transform: uppercase;
     font-size: 36px;
     font-weight: bold;
     padding-bottom: 10px;
@@ -60,6 +61,8 @@
 }
 
 .reach-out-button {
+    text-transform: uppercase;
+    font-weight: 900;
     padding: 10px;
     width: 100%;
     font-size: 22px;
@@ -69,13 +72,13 @@
 }
 
 #light .reach-out-button {
-    color: var(--white);
-    background-color: var(--dark-gray);
+    color: var(--dark-gray);
+    background-color: var(--light-purple);
 }
 
 #dark .reach-out-button {
     color: var(--dark-gray);
-    background-color: var(--white);
+    background-color: var(--light-purple);
 }
 
 #light .reach-out-button:disabled {
@@ -88,18 +91,16 @@
     background-color: #cccccc;
 }
 
-.reach-out-button:hover {
-    transition: all .3s ease-in-out;
-}
-
 #light .reach-out-button:hover:enabled {
-    color: var(--dark-gray);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--dark-purple);
+    transition: all .3s ease-in-out;
 }
 
 #dark .reach-out-button:hover:enabled {
     color: var(--white);
-    background-color: var(--dark-gray);
+    background-color: var(--dark-purple);
+    transition: all .3s ease-in-out;
 }
 
 .reach-out-button-sent {
@@ -136,9 +137,9 @@
 }
 
 #light .reach-out-email:hover {
-    color: var(--light-purple);
+    color: var(--light-blue);
 }
 
 #dark .reach-out-email:hover {
-    color: var(--dark-purple);
+    color: var(--dark-blue);
 }

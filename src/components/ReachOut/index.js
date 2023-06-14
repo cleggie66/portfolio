@@ -51,7 +51,7 @@ function ReachOut({ visibility }) {
     return (
         <div className={visibility}>
             <div className="reach-out-page">
-                <h2>Get In Touch</h2>
+                <h2>Let's Get In Touch</h2>
                 <form className="reach-out-form" ref={form} onSubmit={sendEmail}>
                     <input
                         type="text"

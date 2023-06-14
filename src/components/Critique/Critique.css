@@ -17,7 +17,38 @@
 .critique-page>h2 {
     font-size: 36px;
     font-weight: bold;
-    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.critique-project-logos {
+    display: flex;
+    gap:10px;
+    padding: 20px;
+}
+
+.critique-project-logo {
+    width: 150px;
+    align-self: center;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+}
+
+#light .critique-project-logo:hover {
+    background-color: var(--light-blue);
+}
+
+#dark .critique-project-logo:hover {
+    background-color: var(--dark-blue);
+}
+
+#light .selected-critique-project {
+    background-color: var(--light-purple);
+}
+
+#dark .selected-critique-project {
+    background-color: var(--dark-purple);
 }
 
 .critique-form {
@@ -64,6 +95,8 @@
 }
 
 .critique-button {
+    text-transform: uppercase;
+    font-weight: 900;
     padding: 10px;
     width: 100%;
     font-size: 22px;
@@ -73,13 +106,13 @@
 }
 
 #light .critique-button {
-    color: var(--white);
-    background-color: var(--dark-gray);
+    color: var(--dark-gray);
+    background-color: var(--light-blue);
 }
 
 #dark .critique-button {
     color: var(--dark-gray);
-    background-color: var(--white);
+    background-color: var(--light-blue);
 }
 
 #light .critique-button:disabled {
@@ -92,18 +125,16 @@
     background-color: #cccccc;
 }
 
-.critique-button:hover {
-    transition: all .3s ease-in-out;
-}
-
 #light .critique-button:hover:enabled {
-    color: var(--dark-gray);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--dark-blue);
+    transition: all .3s ease-in-out;
 }
 
 #dark .critique-button:hover:enabled {
     color: var(--white);
-    background-color: var(--dark-gray);
+    background-color: var(--dark-blue);
+    transition: all .3s ease-in-out;
 }
 
 .critique-button-sent {

@@ -1,5 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import emailjs from '@emailjs/browser/es';
+import { useSelector } from "react-redux";
+import myCareLogoLight from "../../media/project-logos/myCare-logo-light.gif";
+import myCareLogoDark from "../../media/project-logos/myCare-logo-dark.gif";
+import banterLogoLight from "../../media/project-logos/banter-logo-light.gif";
+import banterLogoDark from "../../media/project-logos/banter-logo-dark.gif";
+import airbnbLogo from "../../media/project-logos/AirBn2B-logo.png";
 import "./Critique.css"
 
 function Critique({ visibility }) {
@@ -10,6 +16,8 @@ function Critique({ visibility }) {
     const [buttonClass, setButtonClass] = useState("critique-button");
     const [buttonText, setButtonText] = useState("Send It");
     const [errors, setErrors] = useState({});
+    const settingsState = useSelector(state => state.settings);
+    const theme = settingsState.theme;
 
     useEffect(() => {
         const errorsObj = {}
@@ -51,6 +59,26 @@ function Critique({ visibility }) {
                 <h2>
                     Send me a Critique!
                 </h2>
+                <div className="critique-project-logos">
+                    <img
+                        src={theme === "light" ? myCareLogoLight : myCareLogoDark}
+                        alt="project logo"
+                        className={`critique-project-logo ${project === "MyCare" && "selected-critique-project"}`}
+                        onClick={() => setProject("MyCare")}
+                    />
+                    <img
+                        src={theme === "light" ? banterLogoLight : banterLogoDark}
+                        alt="project logo"
+                        className={`critique-project-logo ${project === "Banter" && "selected-critique-project"}`}
+                        onClick={() => setProject("Banter")}
+                    />
+                    <img
+                        src={airbnbLogo}
+                        alt="project logo"
+                        className={`critique-project-logo ${project === "AirBn2B" && "selected-critique-project"}`}
+                        onClick={() => setProject("AirBn2B")}
+                    />
+                </div>
                 <form className="critique-form" ref={form} onSubmit={sendEmail}>
                     <select
                         name="project"
