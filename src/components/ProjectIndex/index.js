@@ -23,39 +23,39 @@ function ProjectIndex({ visibility }) {
     const iconTheme = `${theme === "light" ? "dark" : "light"}`
 
 
-    useEffect(() => {
-        const p = new Ping();
+    // useEffect(() => {
+    //     const p = new Ping();
 
-        p.ping("https://click-me-kutu.onrender.com")
-            .then(data => {
-                console.log("Successful ping: " + data);
-            })
-            .catch(data => {
-                console.error("Ping failed: " + data);
-            })
-        p.ping("https://caleb-airbnb.onrender.com")
-            .then(data => {
-                console.log("Successful ping: " + data);
-            })
-            .catch(data => {
-                console.error("Ping failed: " + data);
-            })
-        p.ping("https://my-care.onrender.com")
-            .then(data => {
-                console.log("Successful ping: " + data);
-            })
-            .catch(data => {
-                console.error("Ping failed: " + data);
-            })
-        p.ping("https://banter-k9ts.onrender.com")
-            .then(data => {
-                console.log("Successful ping: " + data);
-            })
-            .catch(data => {
-                console.error("Ping failed: " + data);
-            })
+    //     p.ping("https://click-me-kutu.onrender.com")
+    //         .then(data => {
+    //             console.log("Successful ping: " + data);
+    //         })
+    //         .catch(data => {
+    //             console.error("Ping failed: " + data);
+    //         })
+    //     p.ping("https://caleb-airbnb.onrender.com")
+    //         .then(data => {
+    //             console.log("Successful ping: " + data);
+    //         })
+    //         .catch(data => {
+    //             console.error("Ping failed: " + data);
+    //         })
+    //     p.ping("https://my-care.onrender.com")
+    //         .then(data => {
+    //             console.log("Successful ping: " + data);
+    //         })
+    //         .catch(data => {
+    //             console.error("Ping failed: " + data);
+    //         })
+    //     p.ping("https://banter-k9ts.onrender.com")
+    //         .then(data => {
+    //             console.log("Successful ping: " + data);
+    //         })
+    //         .catch(data => {
+    //             console.error("Ping failed: " + data);
+    //         })
 
-    }, [])
+    // }, [])
 
     return (
         <div className={visibility}>
