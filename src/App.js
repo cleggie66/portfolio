@@ -7,8 +7,8 @@ import ProjectIndex from "./components/ProjectIndex";
 import Critique from './components/Critique';
 import ReachOut from './components/ReachOut';
 import FunSettings from './components/FunSettings';
-import videoLight from "./media/backgrounds/crystal-slowed-light.mp4";
-import videoDark from "./media/backgrounds/crystal-slowed-dark.mp4";
+// import videoLight from "./media/backgrounds/crystal-slowed-light.mp4";
+// import videoDark from "./media/backgrounds/crystal-slowed-dark.mp4";
 
 
 function App() {
@@ -24,12 +24,12 @@ function App() {
       <ReachOut visibility={pageState.reachOut} />
       <FunSettings visibility={pageState.funSettings} />
       <Footer />
-      <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
+      {/* <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
         <source src={videoLight} type="video/mp4" />
       </video>
       <video className={settingsState.theme === "dark" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
         <source src={videoDark} type="video/mp4" />
-      </video>
+      </video> */}
     </div>
   );
 }

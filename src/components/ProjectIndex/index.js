@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
-import Ping from "ping.js";
-import airBn2BPreview from "../../media/project-previews/AirBn2B.mp4";
-import banterPreview from "../../media/project-previews/banter.mp4";
-import myCarePreview from "../../media/project-previews/myCare.mp4";
+// import Ping from "ping.js";
+// import airBn2BPreview from "../../media/project-previews/AirBn2B.mp4";
+// import banterPreview from "../../media/project-previews/banter.mp4";
+// import myCarePreview from "../../media/project-previews/myCare.mp4";
 import myCareLogoLight from "../../media/project-logos/myCare-logo-light.gif";
 import myCareLogoDark from "../../media/project-logos/myCare-logo-dark.gif";
 import banterLogoLight from "../../media/project-logos/banter-logo-light.gif";
@@ -134,7 +134,7 @@ function ProjectIndex({ visibility }) {
                     </a>
                 </div>
                 <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                    <div className="project-image-container">
+                    {/* <div className="project-image-container">
                         <p className="call-to-action">VISIT WEBSITE</p>
                         <div className="white-cover" />
                         <video className={`${project1}`} loop={true} autoPlay="autoplay" muted>
@@ -146,7 +146,7 @@ function ProjectIndex({ visibility }) {
                         <video className={`${project3}`} loop={true} autoPlay="autoplay" muted>
                             <source src={airBn2BPreview} type="video/mp4" />
                         </video>
-                    </div>
+                    </div> */}
                 </a>
             </div>
         </div>
