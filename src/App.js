@@ -24,12 +24,12 @@ function App() {
       <ReachOut visibility={pageState.reachOut} />
       <FunSettings visibility={pageState.funSettings} />
       <Footer />
-      <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
+      {/* <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
         <source src={videoLight} type="video/mp4" />
       </video>
       <video className={settingsState.theme === "dark" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
         <source src={videoDark} type="video/mp4" />
-      </video>
+      </video> */}
     </div>
   );
 }
