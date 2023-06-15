@@ -17,13 +17,13 @@ function App() {
 
   return (
     <div className={`page cursor-${settingsState.cursor}-${settingsState.theme}`} id={settingsState.theme}>
-      <Navbar />
-      {/* <About visibility={pageState.about} />
-      <ProjectIndex visibility={pageState.home} />
-      <Critique visibility={pageState.critique} />
-      <ReachOut visibility={pageState.reachOut} />
-      <FunSettings visibility={pageState.funSettings} /> */}
-      <Footer />
+      {/* <Navbar /> */}
+      {/* <About visibility={pageState.about} /> */}
+      {/* <ProjectIndex visibility={pageState.home} /> */}
+      {/* <Critique visibility={pageState.critique} /> */}
+      {/* <ReachOut visibility={pageState.reachOut} /> */}
+      {/* <FunSettings visibility={pageState.funSettings} /> */}
+      {/* <Footer /> */}
       <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
         <source src={videoLight} type="video/mp4" />
       </video>
