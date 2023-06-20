@@ -138,12 +138,12 @@
 }
 
 .critique-button-sent {
+    color: white;
+    background-color: rgb(42, 109, 42);
     padding: 10px;
     width: 100%;
     font-size: 22px;
     border: none;
     margin-top: 20px;
     transition: all .3s ease-in-out;
-    color: white;
-    background-color: rgb(42, 109, 42);
 }

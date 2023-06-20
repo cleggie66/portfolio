@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
+// import { useEffect } from "react"
 // import Ping from "ping.js";
 import airBn2BPreview from "../../media/project-previews/AirBn2B.mp4";
 import banterPreview from "../../media/project-previews/banter.mp4";

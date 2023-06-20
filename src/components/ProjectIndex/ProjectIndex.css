@@ -121,12 +121,13 @@
 }
 
 .call-to-action {
-    font-size: 64px;
+    font-size: 42px;
+    font-weight: 900;
     position: absolute;
     text-align: center;
     z-index: 20;
     top: 11vw;
-    right: 14.5vw;
+    right: 13vw;
     opacity: 0;
     transition: all .5s ease-in-out;
 }
