@@ -129,23 +129,6 @@ function FunSettings({ visibility }) {
                         onClick={() => dispatch(setTheme("dark"))}>
                         Dark</h3>
                 </div>
-                <h2>Choose Your Favorite Spice Girl</h2>
-                <div className="spice-options">
-                    <h3
-                        className={`spice-preview ${favSpiceGirl === "emma" && "selected-spice"}`}
-                        onClick={() => setFavSpiceGirl("emma")}>
-                        Emma</h3>
-                    <h3
-                        className={`spice-preview ${favSpiceGirl === "melb" && "selected-spice"}`}
-                        onClick={() => setFavSpiceGirl("melb")}>
-                        Mel B</h3>
-                    <h3 className={`spice-preview ${favSpiceGirl === "melc" && "selected-spice"}`}
-                        onClick={() => setFavSpiceGirl("melc")}>
-                        Melanie C</h3>
-                    <h3 className={`spice-preview ${favSpiceGirl === "geri" && "selected-spice"}`}
-                        onClick={() => setFavSpiceGirl("geri")}>
-                        Geri</h3>
-                </div>
             </div>
         </div>
     )

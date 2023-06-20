@@ -1,11 +1,31 @@
+.site-settings {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    font-size: 42px;
+}
+
+#light .site-settings>i {
+    color: var(--dark-gray);
+}
+
+#dark .site-settings>i {
+    color: var(--white);
+}
+
+#light .site-settings>i:hover {
+    color: var(--light-blue);
+}
+
+#dark .site-settings>i:hover {
+    color: var(--dark-purple);
+}
+
 .footer-icons {
     display: flex;
     gap: 30px;
     margin-top: auto;
     padding: 20px 0;
-}
-
-.footer-icons>a>i {
     font-size: 42px;
 }
 
