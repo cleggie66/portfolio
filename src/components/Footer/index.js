@@ -36,7 +36,7 @@ function Footer() {
                 <a href="mailto: caleb@cleghorn.org" target="_blank" rel="noopener noreferrer">
                     <i className="fa-solid fa-envelope" />
                 </a>
-                <a href={resume} target="_blank" rel="noopener noreferrer">
+                <a href={resume} target="_blank" rel="noopener noreferrer" download>
                     <i className="fa-solid fa-file" />
                 </a>
             </div>

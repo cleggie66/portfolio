@@ -32,8 +32,6 @@ function Navbar() {
                     <p>•</p>
                     <a
                         href={resume}
-                        target="_blank"
-                        rel="noopener noreferrer"
                         className='nav-sub-alink'
                         download>
                         Resume
