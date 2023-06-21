@@ -18,7 +18,7 @@ function ProjectIndex({ visibility }) {
     const [project1, setProject1] = useState("project-preview-active");
     const [project2, setProject2] = useState("project-preview-idle");
     const [project3, setProject3] = useState("project-preview-idle");
-    const [projectLink, setProjectLink] = useState("https://my-care.onrender.com");
+    const [projectLink, setProjectLink] = useState("https://mycare.onrender.com");
     const settingsState = useSelector(state => state.settings);
     const theme = settingsState.theme;
     const iconTheme = `${theme === "light" ? "dark" : "light"}`
@@ -41,7 +41,7 @@ function ProjectIndex({ visibility }) {
     //         .catch(data => {
     //             console.error("Ping failed: " + data);
     //         })
-    //     p.ping("https://my-care.onrender.com")
+    //     p.ping("https://mycare.onrender.com")
     //         .then(data => {
     //             console.log("Successful ping: " + data);
     //         })
@@ -71,7 +71,7 @@ function ProjectIndex({ visibility }) {
                                 setProject1("project-preview-active");
                                 setProject2("project-preview-idle");
                                 setProject3("project-preview-idle");
-                                setProjectLink("https://my-care.onrender.com");
+                                setProjectLink("https://mycare.onrender.com");
                             }}>
                             <h3 className="project-title">MyCare</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
