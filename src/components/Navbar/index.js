@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from "react-redux"
 import { resetPage, setPage } from '../../store/viewing';
 import './Navbar.css';
+import { setProject } from '../../store/settings';
 
 
 function Navbar() {
@@ -15,50 +16,70 @@ function Navbar() {
         }, 1000);
     };
 
+
     return (
         <div className='navbar'>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <h2>About</h2>
+                    <h2 onClick={() => changePage("about")}>
+                        About
+                    </h2>
                 </div>
                 <div className='nav-sub-links'>
                     <div
                         onClick={() => changePage("about")}
                         className='nav-sub-link'
                     >
-                        Bio<div className='white-bg' />
+                        Bio
+                        <div className='white-bg' />
                     </div>
                     <p>•</p>
                     <a
                         href="https://drive.google.com/file/d/1Q1Iqbwz_Q2xbUBHG_nfkTLyb-bDS0tYe/view?usp=sharing"
                         className='nav-sub-alink'
                         target="_blank" rel="noopener noreferrer"
-                        >
+                    >
                         Resume
                     </a>
                 </div>
             </div>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <h2>Projects</h2>
+                    <h2
+                        onClick={() => {
+                            dispatch(setProject(""));
+                            changePage("home");
+                        }}
+                    >Projects</h2>
                 </div>
                 <div className='nav-sub-links'>
                     <div
-                        onClick={() => changePage("home")}
+                        onClick={() => {
+                            dispatch(setProject("myCare"));
+                            changePage("home");
+                        }}
                         className='nav-sub-link'
                     >
-                        MyCare<div className='white-bg' />
+                        MyCare
+                        <div className='white-bg' />
                     </div>
                     <p>•</p>
                     <div
-                        onClick={() => changePage("home")}
+                        onClick={() => {
+                            dispatch(setProject("Banter"));
+                            changePage("home");
+                        }}
                         className='nav-sub-link'
                     >
-                        Banter<div className='white-bg' />
+                        Banter
+                        <div className='white-bg' />
                     </div>
                     <p>•</p>
                     <div
-                        onClick={() => changePage("home")}
+                        onClick={() => {
+                            dispatch(setProject("AirBn2B"));
+                            changePage("home");
+                        }}
                         className='nav-sub-link'
                     >
                         AirBn2B<div className='white-bg' />
@@ -67,21 +88,23 @@ function Navbar() {
             </div>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <h2>Contact</h2>
+                    <h2 onClick={() => changePage("reachOut")}>
+                        Contact
+                    </h2>
                 </div>
                 <div className='nav-sub-links'>
                     <div
                         onClick={() => changePage("critique")}
-                        className='nav-sub-link'
-                    >
-                        Give a critique<div className='white-bg' />
+                        className='nav-sub-link'>
+                        Give a critique
+                        <div className='white-bg' />
                     </div>
                     <p>•</p>
                     <div
                         onClick={() => changePage("reachOut")}
-                        className='nav-sub-link'
-                    >
-                        Message me<div className='white-bg' />
+                        className='nav-sub-link'>
+                        Message me
+                        <div className='white-bg' />
                     </div>
                 </div>
             </div>
