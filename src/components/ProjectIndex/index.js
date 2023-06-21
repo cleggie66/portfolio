@@ -34,7 +34,7 @@ function ProjectIndex({ visibility }) {
     //         .catch(data => {
     //             console.error("Ping failed: " + data);
     //         })
-    //     p.ping("https://caleb-airbnb.onrender.com")
+    //     p.ping("https://airbn2b.onrender.com/")
     //         .then(data => {
     //             console.log("Successful ping: " + data);
     //         })
@@ -48,7 +48,7 @@ function ProjectIndex({ visibility }) {
     //         .catch(data => {
     //             console.error("Ping failed: " + data);
     //         })
-    //     p.ping("https://banter-k9ts.onrender.com")
+    //     p.ping("https://bit-of-banter.onrender.com/")
     //         .then(data => {
     //             console.log("Successful ping: " + data);
     //         })
@@ -94,7 +94,7 @@ function ProjectIndex({ visibility }) {
                                 setProject1("project-preview-idle");
                                 setProject2("project-preview-active");
                                 setProject3("project-preview-idle");
-                                setProjectLink("https://banter-k9ts.onrender.com/");
+                                setProjectLink("https://bit-of-banter.onrender.com/");
                             }}>
                             <h3 className="project-title">Banter</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
@@ -117,7 +117,7 @@ function ProjectIndex({ visibility }) {
                                 setProject1("project-preview-idle");
                                 setProject2("project-preview-idle");
                                 setProject3("project-preview-active");
-                                setProjectLink("https://caleb-airbnb.onrender.com/");
+                                setProjectLink("https://airbn2b.onrender.com/");
 
                             }}>
                             <h3 className="project-title">AirBn2B</h3>
