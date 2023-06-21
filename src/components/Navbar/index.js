@@ -1,7 +1,6 @@
 import React from 'react';
 import { useDispatch } from "react-redux"
 import { resetPage, setPage } from '../../store/viewing';
-import resume from "../../media/caleb-cleghorn-resume.pdf";
 import './Navbar.css';
 
 
@@ -31,9 +30,10 @@ function Navbar() {
                     </div>
                     <p>•</p>
                     <a
-                        href={resume}
+                        href="https://drive.google.com/file/d/1Q1Iqbwz_Q2xbUBHG_nfkTLyb-bDS0tYe/view?usp=sharing"
                         className='nav-sub-alink'
-                        download>
+                        target="_blank" rel="noopener noreferrer"
+                        >
                         Resume
                     </a>
                 </div>

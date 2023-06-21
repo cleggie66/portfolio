@@ -2,7 +2,6 @@
 import { setCursor, setTheme } from "../../store/settings";
 import { useDispatch, useSelector } from "react-redux";
 
-import resume from "../../media/caleb-cleghorn-resume.pdf"
 import "./Footer.css"
 
 function Footer() {
@@ -36,7 +35,8 @@ function Footer() {
                 <a href="mailto: caleb@cleghorn.org" target="_blank" rel="noopener noreferrer">
                     <i className="fa-solid fa-envelope" />
                 </a>
-                <a href={resume} download>
+                <a href="https://drive.google.com/file/d/1Q1Iqbwz_Q2xbUBHG_nfkTLyb-bDS0tYe/view?usp=sharing"
+                    target="_blank" rel="noopener noreferrer">
                     <i className="fa-solid fa-file" />
                 </a>
             </div>
