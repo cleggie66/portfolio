@@ -82,7 +82,7 @@ function Navbar() {
                         onClick={() => changePage("reachOut")}
                         className='nav-sub-link'
                     >
-                        Reach out<div className='white-bg' />
+                        Message me<div className='white-bg' />
                     </div>
                 </div>
             </div>
