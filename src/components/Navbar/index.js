@@ -34,7 +34,8 @@ function Navbar() {
                         href={resume}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className='nav-sub-alink'>
+                        className='nav-sub-alink'
+                        download>
                         Resume
                     </a>
                 </div>
