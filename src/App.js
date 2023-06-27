@@ -16,21 +16,26 @@ function App() {
   const settingsState = useSelector(state => state.settings);
 
   return (
-    <div className={`page cursor-${settingsState.cursor}-${settingsState.theme}`} id={settingsState.theme}>
-      <Navbar />
-      <About visibility={pageState.about} />
-      <ProjectIndex visibility={pageState.home} />
-      <Critique visibility={pageState.critique} />
-      <ReachOut visibility={pageState.reachOut} />
-      <FunSettings visibility={pageState.funSettings} />
-      <Footer />
-      <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
-        <source src={videoLight} type="video/mp4" />
-      </video>
-      <video className={settingsState.theme === "dark" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
-        <source src={videoDark} type="video/mp4" />
-      </video>
-    </div>
+    <>
+      <div className='loading-page'>
+        <i className="fa-solid fa-spinner fa-spin-pulse" />
+      </div>
+      <div className={`page cursor-${settingsState.cursor}-${settingsState.theme}`} id={settingsState.theme}>
+        <Navbar />
+        <About visibility={pageState.about} />
+        <ProjectIndex visibility={pageState.home} />
+        <Critique visibility={pageState.critique} />
+        <ReachOut visibility={pageState.reachOut} />
+        <FunSettings visibility={pageState.funSettings} />
+        <Footer />
+        <video className={settingsState.theme === "light" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
+          <source src={videoLight} type="video/mp4" />
+        </video>
+        <video className={settingsState.theme === "dark" ? "background-video-visible" : "background-video-hidden"} loop={true} autoPlay="autoplay" muted>
+          <source src={videoDark} type="video/mp4" />
+        </video>
+      </div>
+    </>
   );
 }
 

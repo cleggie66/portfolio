@@ -65,18 +65,17 @@ function ProjectIndex({ visibility }) {
     return (
         <div className={visibility}>
             <div className="project-index">
-                <div className="projects-list">
+                <div
+                    onMouseLeave={() => dispatch(setProject(""))}
+                    className="projects-list">
                     <h2>Projects</h2>
                     <hr />
                     <a href={projectLink} target="_blank" rel="noopener noreferrer">
                         <div
                             className={activeProject === "myCare" ? "active-project-line" : "project-line"}
                             onMouseEnter={() => {
-                                setProject1("project-preview-active");
-                                setProject2("project-preview-idle");
-                                setProject3("project-preview-idle");
                                 setProjectLink("https://mycare.onrender.com");
-                                dispatch(setProject(""));
+                                dispatch(setProject("myCare"));
                             }}>
                             <h3 className="project-title">MyCare</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
@@ -96,11 +95,8 @@ function ProjectIndex({ visibility }) {
                         <div
                             className={activeProject === "Banter" ? "active-project-line" : "project-line"}
                             onMouseEnter={() => {
-                                setProject1("project-preview-idle");
-                                setProject2("project-preview-active");
-                                setProject3("project-preview-idle");
                                 setProjectLink("https://bit-of-banter.onrender.com/");
-                                dispatch(setProject(""));
+                                dispatch(setProject("Banter"));
                             }}>
                             <h3 className="project-title">Banter</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
@@ -120,11 +116,8 @@ function ProjectIndex({ visibility }) {
                         <div
                             className={activeProject === "AirBn2B" ? "active-project-line" : "project-line"}
                             onMouseEnter={() => {
-                                setProject1("project-preview-idle");
-                                setProject2("project-preview-idle");
-                                setProject3("project-preview-active");
                                 setProjectLink("https://airbn2b.onrender.com/");
-                                dispatch(setProject(""));
+                                dispatch(setProject("AirBn2B"));
                             }}>
                             <h3 className="project-title">AirBn2B</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
@@ -144,13 +137,13 @@ function ProjectIndex({ visibility }) {
                     <div className="project-image-container">
                         <p className="call-to-action">VISIT WEBSITE</p>
                         <div className="white-cover" />
-                        <video className={`${project1}`} loop={true} autoPlay="autoplay" muted>
+                        <video className={(activeProject === "myCare" || activeProject === "") ? "project-preview-active" : "project-preview-idle"} loop={true} autoPlay="autoplay" muted>
                             <source src={myCarePreview} type="video/mp4" />
                         </video>
-                        <video className={`${project2}`} loop={true} autoPlay="autoplay" muted>
+                        <video className={activeProject === "Banter" ? "project-preview-active" : "project-preview-idle"} loop={true} autoPlay="autoplay" muted>
                             <source src={banterPreview} type="video/mp4" />
                         </video>
-                        <video className={`${project3}`} loop={true} autoPlay="autoplay" muted>
+                        <video className={activeProject === "AirBn2B" ? "project-preview-active" : "project-preview-idle"} loop={true} autoPlay="autoplay" muted>
                             <source src={airBn2BPreview} type="video/mp4" />
                         </video>
                     </div>
