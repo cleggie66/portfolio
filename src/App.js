@@ -9,15 +9,27 @@ import ReachOut from './components/ReachOut';
 import FunSettings from './components/FunSettings';
 import videoLight from "./media/backgrounds/crystal-slowed-light.mp4";
 import videoDark from "./media/backgrounds/crystal-slowed-dark.mp4";
+import { useEffect, useState } from 'react';
 
 
 function App() {
   const pageState = useSelector(state => state.viewing);
   const settingsState = useSelector(state => state.settings);
+  const [loadingPageClass, setLoadingPageClass] = useState("loading-page");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoadingPageClass("loading-page-hidden");
+    }, 500);
+
+    setTimeout(() => {
+      setLoadingPageClass("loading-page-disabled");
+    }, 500);
+  }, [])
 
   return (
     <div className={`page cursor-${settingsState.cursor}-${settingsState.theme}`} id={settingsState.theme}>
-      <div className='loading-page' id={settingsState.theme}>
+      <div className={loadingPageClass} id={settingsState.theme}>
         <i className="fa-solid fa-spinner fa-spin-pulse" />
       </div>
       <Navbar />
