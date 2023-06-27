@@ -20,11 +20,11 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoadingPageClass("loading-page-hidden");
-    }, 500);
+    }, 1000);
 
     setTimeout(() => {
       setLoadingPageClass("loading-page-disabled");
-    }, 1500);
+    }, 2000);
   }, [])
 
   return (
