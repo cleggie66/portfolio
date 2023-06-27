@@ -64,6 +64,10 @@
     transition: all 1s ease-in-out;
 }
 
+.loading-page-disabled {
+    display: none;
+}
+
 .error {
     font-size: 22px;
     color: red;

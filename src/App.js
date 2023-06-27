@@ -24,7 +24,7 @@ function App() {
 
     setTimeout(() => {
       setLoadingPageClass("loading-page-disabled");
-    }, 500);
+    }, 1500);
   }, [])
 
   return (
