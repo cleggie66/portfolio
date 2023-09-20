@@ -4,10 +4,16 @@ import { resetPage, setPage } from '../../store/viewing';
 import { setProject } from '../../store/settings';
 import LetterGenerator from '../LetterGenerator';
 import './Navbar.css';
+import { useState } from 'react';
 
 
 function Navbar() {
     const dispatch = useDispatch();
+
+    const [header1Hover, setHeader1Hover] = useState(false);
+    const [header2Hover, setHeader2Hover] = useState(false);
+    const [header3Hover, setHeader3Hover] = useState(false);
+
 
     const changePage = (page) => {
         dispatch(setPage(page));
@@ -20,17 +26,25 @@ function Navbar() {
 
     return (
         <div className='navbar'>
-            <div className='nav-item'>
+            <div
+                className='nav-item'
+                onMouseOver={() => setHeader1Hover(true)}
+                onMouseLeave={() => {
+                    setTimeout(() => {
+                        setHeader1Hover(false)
+                    }, 3000);
+                }}
+            >
                 <div className='nav-link'>
                     <div
                         onClick={() => changePage("about")}
                         className='word'
                     >
-                        <LetterGenerator letter={"a"} />
-                        <LetterGenerator letter={"b"} />
-                        <LetterGenerator letter={"o"} />
-                        <LetterGenerator letter={"u"} />
-                        <LetterGenerator letter={"t"} />
+                        <LetterGenerator letter={"a"} active={header1Hover} />
+                        <LetterGenerator letter={"b"} active={header1Hover} />
+                        <LetterGenerator letter={"o"} active={header1Hover} />
+                        <LetterGenerator letter={"u"} active={header1Hover} />
+                        <LetterGenerator letter={"t"} active={header1Hover} />
                     </div>
                 </div>
                 <div className='nav-sub-links'>
@@ -51,7 +65,15 @@ function Navbar() {
                     </a>
                 </div>
             </div>
-            <div className='nav-item'>
+            <div
+                className='nav-item'
+                onMouseOver={() => setHeader2Hover(true)}
+                onMouseLeave={() => {
+                    setTimeout(() => {
+                        setHeader2Hover(false)
+                    }, 3000);
+                }}
+            >
                 <div className='nav-link'>
                     <div
                         onClick={() => {
@@ -60,14 +82,14 @@ function Navbar() {
                         }}
                         className='word'
                     >
-                        <LetterGenerator letter={"p"} />
-                        <LetterGenerator letter={"r"} />
-                        <LetterGenerator letter={"o"} />
-                        <LetterGenerator letter={"j"} />
-                        <LetterGenerator letter={"e"} />
-                        <LetterGenerator letter={"c"} />
-                        <LetterGenerator letter={"t"} />
-                        <LetterGenerator letter={"s"} />
+                        <LetterGenerator letter={"p"} active={header2Hover} />
+                        <LetterGenerator letter={"r"} active={header2Hover} />
+                        <LetterGenerator letter={"o"} active={header2Hover} />
+                        <LetterGenerator letter={"j"} active={header2Hover} />
+                        <LetterGenerator letter={"e"} active={header2Hover} />
+                        <LetterGenerator letter={"c"} active={header2Hover} />
+                        <LetterGenerator letter={"t"} active={header2Hover} />
+                        <LetterGenerator letter={"s"} active={header2Hover} />
                     </div>
                 </div>
                 <div className='nav-sub-links'>
@@ -104,19 +126,27 @@ function Navbar() {
                     </div>
                 </div>
             </div>
-            <div className='nav-item'>
+            <div
+                className='nav-item'
+                onMouseOver={() => setHeader3Hover(true)}
+                onMouseLeave={() => {
+                    setTimeout(() => {
+                        setHeader3Hover(false)
+                    }, 3000);
+                }}
+            >
                 <div className='nav-link'>
                     <div
                         onClick={() => changePage("reachOut")}
                         className='word'
                     >
-                        <LetterGenerator letter={"c"} />
-                        <LetterGenerator letter={"o"} />
-                        <LetterGenerator letter={"n"} />
-                        <LetterGenerator letter={"t"} />
-                        <LetterGenerator letter={"a"} />
-                        <LetterGenerator letter={"c"} />
-                        <LetterGenerator letter={"t"} />
+                        <LetterGenerator letter={"c"} active={header3Hover} />
+                        <LetterGenerator letter={"o"} active={header3Hover} />
+                        <LetterGenerator letter={"n"} active={header3Hover} />
+                        <LetterGenerator letter={"t"} active={header3Hover} />
+                        <LetterGenerator letter={"a"} active={header3Hover} />
+                        <LetterGenerator letter={"c"} active={header3Hover} />
+                        <LetterGenerator letter={"t"} active={header3Hover} />
                     </div>
                 </div>
                 <div className='nav-sub-links'>

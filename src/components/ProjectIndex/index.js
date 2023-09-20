@@ -27,41 +27,6 @@ function ProjectIndex({ visibility }) {
     const activeProject = settingsState.project;
     const iconTheme = `${theme === "light" ? "dark" : "light"}`;
 
-
-    // useEffect(() => {
-    //     const p = new Ping();
-
-    //     p.ping("https://click-me-kutu.onrender.com")
-    //         .then(data => {
-    //             console.log("Successful ping: " + data);
-    //         })
-    //         .catch(data => {
-    //             console.error("Ping failed: " + data);
-    //         })
-    //     p.ping("https://airbn2b.onrender.com/")
-    //         .then(data => {
-    //             console.log("Successful ping: " + data);
-    //         })
-    //         .catch(data => {
-    //             console.error("Ping failed: " + data);
-    //         })
-    //     p.ping("https://mycare.onrender.com")
-    //         .then(data => {
-    //             console.log("Successful ping: " + data);
-    //         })
-    //         .catch(data => {
-    //             console.error("Ping failed: " + data);
-    //         })
-    //     p.ping("https://bit-of-banter.onrender.com/")
-    //         .then(data => {
-    //             console.log("Successful ping: " + data);
-    //         })
-    //         .catch(data => {
-    //             console.error("Ping failed: " + data);
-    //         })
-
-    // }, [])
-
     return (
         <div className={visibility}>
             <div className="project-index">
