@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch } from "react-redux"
 import { resetPage, setPage } from '../../store/viewing';
 import { setProject } from '../../store/settings';
+import LetterGenerator from '../LetterGenerator';
 import './Navbar.css';
 
 
