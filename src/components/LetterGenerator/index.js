@@ -4,10 +4,31 @@ import "./LetterGenerator.css";
 function LetterGenerator(props) {
     const aFrames = require.context('../../media/letters/a', true);
     const bFrames = require.context('../../media/letters/b', true);
+    const cFrames = require.context('../../media/letters/c', true);
+    const eFrames = require.context('../../media/letters/e', true);
+    const jFrames = require.context('../../media/letters/j', true);
+    const nFrames = require.context('../../media/letters/n', true);
     const oFrames = require.context('../../media/letters/o', true);
-    const uFrames = require.context('../../media/letters/u', true);
+    const pFrames = require.context('../../media/letters/p', true);
+    const rFrames = require.context('../../media/letters/r', true);
+    const sFrames = require.context('../../media/letters/s', true);
     const tFrames = require.context('../../media/letters/t', true);
+    const uFrames = require.context('../../media/letters/u', true);
 
+    const letterObj = {
+        "a": aFrames.keys().map(image => aFrames(image)),
+        "b": bFrames.keys().map(image => bFrames(image)),
+        "c": cFrames.keys().map(image => cFrames(image)),
+        "e": eFrames.keys().map(image => eFrames(image)),
+        "j": jFrames.keys().map(image => jFrames(image)),
+        "n": nFrames.keys().map(image => nFrames(image)),
+        "o": oFrames.keys().map(image => oFrames(image)),
+        "p": pFrames.keys().map(image => pFrames(image)),
+        "r": rFrames.keys().map(image => rFrames(image)),
+        "s": sFrames.keys().map(image => sFrames(image)),
+        "t": tFrames.keys().map(image => tFrames(image)),
+        "u": uFrames.keys().map(image => uFrames(image)),
+    };
 
     const intervalTime = 20;
     const frameCount = 12
@@ -18,13 +39,6 @@ function LetterGenerator(props) {
     const [endCounter, setEndCounter] = useState(false);
     const [counter, setCounter] = useState(0);
 
-    const letterObj = {
-        "a": aFrames.keys().map(image => aFrames(image)),
-        "b": bFrames.keys().map(image => bFrames(image)),
-        "o": oFrames.keys().map(image => oFrames(image)),
-        "u": uFrames.keys().map(image => uFrames(image)),
-        "t": tFrames.keys().map(image => tFrames(image)),
-    }
     useEffect(() => {
         if (startCounter) {
             _intervalRef.current = setInterval(() => {
