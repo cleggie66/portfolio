@@ -53,12 +53,22 @@ function Navbar() {
             </div>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <h2
+                    <div
                         onClick={() => {
                             dispatch(setProject(""));
                             changePage("home");
                         }}
-                    >Projects</h2>
+                        className='word'
+                    >
+                        <LetterGenerator letter={"p"} />
+                        <LetterGenerator letter={"r"} />
+                        <LetterGenerator letter={"o"} />
+                        <LetterGenerator letter={"j"} />
+                        <LetterGenerator letter={"e"} />
+                        <LetterGenerator letter={"c"} />
+                        <LetterGenerator letter={"t"} />
+                        <LetterGenerator letter={"s"} />
+                    </div>
                 </div>
                 <div className='nav-sub-links'>
                     <div
@@ -96,9 +106,18 @@ function Navbar() {
             </div>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <h2 onClick={() => changePage("reachOut")}>
-                        Contact
-                    </h2>
+                    <div
+                        onClick={() => changePage("reachOut")}
+                        className='word'
+                    >
+                        <LetterGenerator letter={"c"} />
+                        <LetterGenerator letter={"o"} />
+                        <LetterGenerator letter={"n"} />
+                        <LetterGenerator letter={"t"} />
+                        <LetterGenerator letter={"a"} />
+                        <LetterGenerator letter={"c"} />
+                        <LetterGenerator letter={"t"} />
+                    </div>
                 </div>
                 <div className='nav-sub-links'>
                     <div
