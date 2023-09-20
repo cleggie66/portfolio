@@ -1,23 +1,25 @@
 .word {
     display: flex;
     flex-direction: row;
-    background-color: gray;
+    justify-content: center;
+    width: 33.3vw;
 }
 
 .letter {
-    height: 10vh;
-    width: 5vw;
+    height: 7vh;
+    width: 4.2vw;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.3s linear;
     overflow: hidden;
+    filter: invert();
 }
 
 .letter:hover {
-    width: 7vw;
+    width: 6vw;
 }
 
 .letter>img {
-    height: 100%;
+    height: 120%;
 }

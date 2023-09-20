@@ -22,10 +22,16 @@ function Navbar() {
         <div className='navbar'>
             <div className='nav-item'>
                 <div className='nav-link'>
-                    <h2 onClick={() => changePage("about")}>
-                        <LetterGenerator letter={"a"}/>
-                        About
-                    </h2>
+                    <div
+                        onClick={() => changePage("about")}
+                        className='word'
+                    >
+                        <LetterGenerator letter={"a"} />
+                        <LetterGenerator letter={"b"} />
+                        <LetterGenerator letter={"o"} />
+                        <LetterGenerator letter={"u"} />
+                        <LetterGenerator letter={"t"} />
+                    </div>
                 </div>
                 <div className='nav-sub-links'>
                     <div
