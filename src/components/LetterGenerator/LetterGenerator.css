@@ -1,0 +1,23 @@
+.word {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+}
+
+.letter {
+    height: 10vh;
+    width: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s linear;
+    overflow: hidden;
+}
+
+.letter:hover {
+    width: 7vw;
+}
+
+.letter>img {
+    height: 100%;
+}

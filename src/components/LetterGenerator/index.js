@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import "./LetterGenerator.css";
+
 import a00 from "../../media/letters/a/navbar00.png";
 import a01 from "../../media/letters/a/navbar01.png";
 import a02 from "../../media/letters/a/navbar02.png";

@@ -23,6 +23,7 @@ function Navbar() {
             <div className='nav-item'>
                 <div className='nav-link'>
                     <h2 onClick={() => changePage("about")}>
+                        <LetterGenerator letter={"a"}/>
                         About
                     </h2>
                 </div>
