@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch } from "react-redux"
 import { resetPage, setPage } from '../../store/viewing';
-import './Navbar.css';
 import { setProject } from '../../store/settings';
+import './Navbar.css';
 
 
 function Navbar() {
