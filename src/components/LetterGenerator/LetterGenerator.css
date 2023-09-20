@@ -7,17 +7,33 @@
 
 .letter {
     height: 7vh;
-    width: 4.2vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all 0.3s linear;
+    transition: all 0.6s linear;
     overflow: hidden;
     filter: invert();
 }
 
 .letter:hover {
-    width: 6vw;
+    width: 5.5vw;
+    transition: all 0.15s linear;
+}
+
+.size-1 {
+    width: 2.5vw;
+}
+
+.size-2 {
+    width: 3.5vw;
+}
+
+.size-3 {
+    width: 4vw;
+}
+
+.size-4 {
+    width: 4.2vw;
 }
 
 .letter>img {

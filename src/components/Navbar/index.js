@@ -7,7 +7,7 @@ import './Navbar.css';
 
 
 function Navbar() {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
 
     const changePage = (page) => {
         dispatch(setPage(page));

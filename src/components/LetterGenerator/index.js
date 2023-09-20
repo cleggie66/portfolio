@@ -29,10 +29,19 @@ function LetterGenerator(props) {
         "t": tFrames.keys().map(image => tFrames(image)),
         "u": uFrames.keys().map(image => uFrames(image)),
     };
-
-    const intervalTime = 20;
-    const frameCount = 12
+    
+    const intervalTime = 10;
+    const frameCount = 12;
     const letter = props.letter;
+
+    const smallLetters = ["j"];
+    const mediumLetters = ["t", "e"];
+    const bigLetters = ["a", "c"];
+    let letterSize = "size-3";
+
+    if (smallLetters.includes(letter)) letterSize = "size-1";
+    if (mediumLetters.includes(letter)) letterSize = "size-2";
+    if (bigLetters.includes(letter)) letterSize = "size-4";
 
     const _intervalRef = useRef(null);
     const [startCounter, setStartCounter] = useState(false);
@@ -66,14 +75,14 @@ function LetterGenerator(props) {
                         return 0;
                     }
                 });
-            }, intervalTime);
+            }, (intervalTime*4));
         }
         return () => clearInterval(_intervalRef.current);
     }, [endCounter]);
 
     return (
         <>
-            <div className="letter"
+            <div className={`letter ${letterSize}`}
                 onMouseOver={() => {
                     setStartCounter(true)
                     setEndCounter(false)
