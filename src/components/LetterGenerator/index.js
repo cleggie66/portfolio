@@ -33,14 +33,11 @@ function LetterGenerator(props) {
     const intervalTime = 10;
     const frameCount = 12;
     const letter = props.letter;
-    const status = props.active;
 
     const smallLetters = ["j"];
     const mediumLetters = ["t", "e"];
     const bigLetters = ["a", "c"];
     let letterSize = "size-3";
-
-    const filledLetter = letterObj[letter][frameCount + 1];
 
     if (smallLetters.includes(letter)) letterSize = "size-1";
     if (mediumLetters.includes(letter)) letterSize = "size-2";
@@ -95,7 +92,7 @@ function LetterGenerator(props) {
                     setEndCounter(true)
                 }}
             >
-                <img src={status ? letterObj[letter][counter] : filledLetter} alt={letter} />
+                <img src={letterObj[letter][counter]} alt={letter} />
             </div>
         </>
     );

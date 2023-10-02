@@ -104,6 +104,8 @@
 }
 
 .reach-out-button-sent {
+    text-transform: uppercase;
+    font-weight: 900;
     padding: 10px;
     width: 100%;
     font-size: 22px;
