@@ -1,35 +1,32 @@
-.navbar {
+.navbar-full,
+.navbar-basic {
     width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 20px 0;
 }
 
-.nav-link>h2{
+.navbar-basic {
+    display: none;
+}
+
+.nav-link>h2 {
     font-family: 'Climate Crisis', sans-serif;
-    font-size: 48px;
+    font-size: 38px;
     letter-spacing: 3px;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 #light .nav-link {
-    color: var(--dark-gray);
-}
-
-#dark .nav-link {
-    color: var(--white);
-}
-
-#light .nav-link:hover {
     color: #00000000;
-    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: var(--dark-gray);
 }
 
-#dark .nav-link:hover {
+#dark .nav-link {
     color: #00000000;
-    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-width: .1px;
     -webkit-text-stroke-color: var(--white);
 }
 
@@ -118,4 +115,30 @@
 .nav-sub-alink:hover .white-bg {
     height: 10px;
     transition: height .5s ease-in-out;
+}
+
+
+/* iPad Pro and Small Screens */
+@media (max-width: 1024px) {
+    .navbar-full {
+        display: none;
+    }
+
+    .navbar-basic {
+        display: flex;
+    }
+}
+
+/* iPads and Tablets */
+@media (max-width: 768px) {
+    .navbar-basic {
+        flex-direction: column;
+    }
+}
+
+/* iPhones and Phones */
+@media (max-width: 480px) {
+    .navbar-basic {
+        display: none;
+    }
 }

@@ -44,3 +44,37 @@
 #dark .footer-icons>a>i:hover {
     color: var(--dark-purple);
 }
+
+.mobile-nav-bars {
+    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 42px;
+}
+
+#light .mobile-nav-bars>i {
+    color: var(--dark-gray);
+}
+
+#dark .mobile-nav-bars>i {
+    color: var(--white);
+}
+
+
+/* iPad Pro and Small Screens */
+@media (max-width: 1024px) {
+
+}
+
+/* iPads and Tablets */
+@media (max-width: 768px) {
+
+}
+
+/* iPhones and Phones */
+@media (max-width: 480px) {
+    .mobile-nav-bars {
+        display: block;
+    }
+}

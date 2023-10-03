@@ -40,6 +40,12 @@ function Footer() {
                     <i className="fa-solid fa-file" />
                 </a>
             </div>
+            <div className="mobile-nav-bars">
+                <i
+                    className="fa-solid fa-bars"
+                />
+
+            </div>
         </>
     )
 }
