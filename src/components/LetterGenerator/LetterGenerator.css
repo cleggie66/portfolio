@@ -6,13 +6,12 @@
 }
 
 .letter {
-    height: 7vh;
+    height: 3.8vw;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 0.6s linear;
     overflow: hidden;
-    /* filter: invert(); */
 }
 
 .letter:hover {

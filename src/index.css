@@ -126,3 +126,11 @@
     opacity: 0;
     transition: all 1s ease-in;
 }
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
