@@ -1,6 +1,4 @@
 import { useState } from "react"
-// import { useEffect } from "react"
-// import Ping from "ping.js";
 import { useDispatch, useSelector } from "react-redux";
 
 import airBn2BPreview from "../../media/project-previews/AirBn2B.mp4";
