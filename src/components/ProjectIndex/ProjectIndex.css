@@ -126,6 +126,13 @@
 
 /* END PROJECT DESCRIPTION */
 
+.live-project-link {
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
 .project-preview-logo {
     width: 150px;
     padding-top: 20px;
