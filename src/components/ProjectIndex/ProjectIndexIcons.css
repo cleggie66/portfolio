@@ -20,7 +20,7 @@
     transition-property: right;
 }
 
-.project-line:hover .icon2 {
+.active-project-line .icon2 {
     right: 50px;
     transition: right .8s ease-in-out;
 }
@@ -33,7 +33,7 @@
     transition-property: right;
 }
 
-.project-line:hover .icon3 {
+.active-project-line .icon3 {
     right: 85px;
     transition: right .7s ease-in-out;
 }
@@ -46,7 +46,7 @@
     transition-property: right;
 }
 
-.project-line:hover .icon4 {
+.active-project-line .icon4 {
     right: 120px;
     transition: right .6s ease-in-out;
 }
@@ -59,7 +59,7 @@
     transition-property: right;
 }
 
-.project-line:hover .icon5 {
+.active-project-line .icon5 {
     right: 155px;
     transition: right .5s ease-in-out;
 }
@@ -81,8 +81,8 @@
     color: var(--white);
 }
 
-#light .project-line:hover .arrow,
-#dark .project-line:hover .arrow{
+#light .active-project-line .arrow,
+#dark .active-project-line .arrow{
     color: #00000000;
     transition: color .2s ease-in-out;
 }

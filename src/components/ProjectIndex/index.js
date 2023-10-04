@@ -33,7 +33,7 @@ function ProjectIndex({ visibility }) {
                 <div
                     onMouseLeave={() => dispatch(setProject(""))}
                     className="projects-list">
-                    <h2>Projects</h2>
+                    <h2>Featured</h2>
                     <hr />
                     <a href={projectLink} target="_blank" rel="noopener noreferrer">
                         <div
