@@ -28,6 +28,7 @@
 }
 
 .loading-page {
+    top: 0;
     z-index: 100;
     width: 100vw;
     height: 100vh;
@@ -52,21 +53,37 @@
 }
 
 .loading-page-hidden {
+    top: 100vh;
     z-index: 100;
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 82px;
-    opacity: 0;
+    opacity: 1;
     transition: all 1s ease-in-out;
+}
+
+#light .loading-page-hidden {
+    color: var(--light-blue);
+    background-color: var(--light-gray);
+}
+
+#dark .loading-page-hidden {
+    color: var(--light-blue);
+    background-color: var(--dark-gray);
 }
 
 .loading-page-disabled {
     display: none;
+}
+
+.loading-bar {
+    width: 30vw;
+    min-width: 300px;
+    opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 .error {

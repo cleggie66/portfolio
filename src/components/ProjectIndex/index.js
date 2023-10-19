@@ -25,7 +25,7 @@ function ProjectIndex({ visibility }) {
                     className="projects-list">
                     <h2>Featured</h2>
                     <hr />
-                    <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                    <div>
                         <div
                             className={activeProject === "myCare" ? "active-project-line" : "project-line"}
                             onMouseEnter={() => {
@@ -41,12 +41,14 @@ function ProjectIndex({ visibility }) {
                             <img src={`https://skillicons.dev/icons?i=postgres&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className={activeProject === "myCare" ? "active-project-description" : "project-description"}>
                                 <p>A medical portal for patients to solve their healthcare needs and take action</p>
-                                <h3 className="live-project-link">Visit Live Site</h3>
+                                <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                                    <h3 className="live-project-link">Visit Live Site</h3>
+                                </a>
                             </div>
                         </div>
-                    </a>
+                    </div>
                     <hr />
-                    <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                    <div>
                         <div
                             className={activeProject === "Banter" ? "active-project-line" : "project-line"}
                             onMouseEnter={() => {
@@ -62,12 +64,14 @@ function ProjectIndex({ visibility }) {
                             <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className={activeProject === "Banter" ? "active-project-description" : "project-description"}>
                                 <p>A Slack clone where users can chat through direct messages and channels</p>
-                                <h3 className="live-project-link">Visit Live Site</h3>
+                                <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                                    <h3 className="live-project-link">Visit Live Site</h3>
+                                </a>
                             </div>
                         </div>
-                    </a>
+                    </div>
                     <hr />
-                    <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                    <div>
                         <div
                             className={activeProject === "AirBn2B" ? "active-project-line" : "project-line"}
                             onMouseEnter={() => {
@@ -83,10 +87,12 @@ function ProjectIndex({ visibility }) {
                             <img src={`https://skillicons.dev/icons?i=sequelize&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className={activeProject === "AirBn2B" ? "active-project-description" : "project-description"}>
                                 <p>A web app clone of Airbnb, made for intuitive and simple access to vacation rentals</p>
-                                <h3 className="live-project-link">Visit Live Site</h3>
+                                <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
+                                    Visit Website
+                                </a>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <a href={projectLink} target="_blank" rel="noopener noreferrer">
                     <div className="project-image-container">

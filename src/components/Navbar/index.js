@@ -21,9 +21,7 @@ function Navbar() {
     return (
         <>
             <div className='navbar-full'>
-                <div
-                    className='nav-item'
-                >
+                <div className='nav-item'>
                     <div className='nav-link'>
                         <div
                             onClick={() => changePage("about")}
