@@ -41,8 +41,8 @@ function ProjectIndex({ visibility }) {
                             <img src={`https://skillicons.dev/icons?i=postgres&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className={activeProject === "myCare" ? "active-project-description" : "project-description"}>
                                 <p>A medical portal for patients to solve their healthcare needs and take action</p>
-                                <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                                    <h3 className="live-project-link">Visit Live Site</h3>
+                                <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
+                                    Visit Website
                                 </a>
                             </div>
                         </div>
@@ -64,8 +64,8 @@ function ProjectIndex({ visibility }) {
                             <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon5" />
                             <div className={activeProject === "Banter" ? "active-project-description" : "project-description"}>
                                 <p>A Slack clone where users can chat through direct messages and channels</p>
-                                <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                                    <h3 className="live-project-link">Visit Live Site</h3>
+                                <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
+                                    Visit Website
                                 </a>
                             </div>
                         </div>
