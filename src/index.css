@@ -146,16 +146,22 @@
 
 
 /* iPad Pro and Small Screens */
-@media (max-width: 1024px) {
-
-}
+@media (max-width: 1024px) {}
 
 /* iPads and Tablets */
-@media (max-width: 768px) {
-
-}
+@media (max-width: 768px) {}
 
 /* iPhones and Phones */
 @media (max-width: 480px) {
+    .pre {
+        top: -100vh;
+    }
 
+    .active {
+        top: 30px;
+    }
+
+    .post {
+        top: 300px;
+    }
 }

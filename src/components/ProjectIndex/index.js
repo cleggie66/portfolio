@@ -25,73 +25,67 @@ function ProjectIndex({ visibility }) {
                     className="projects-list">
                     <h2>Featured</h2>
                     <hr />
-                    <div>
-                        <div
-                            className={activeProject === "myCare" ? "active-project-line" : "project-line"}
-                            onMouseEnter={() => {
-                                setProjectLink("https://mycare.onrender.com");
-                                dispatch(setProject("myCare"));
-                            }}
-                        >
-                            <h3 className="project-title">MyCare</h3>
-                            <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={`https://skillicons.dev/icons?i=python&theme=${iconTheme}`} alt="icon" className="icon1" />
-                            <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon2" />
-                            <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon3" />
-                            <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon4" />
-                            <img src={`https://skillicons.dev/icons?i=postgres&theme=${iconTheme}`} alt="icon" className="icon5" />
-                            <div className={activeProject === "myCare" ? "active-project-description" : "project-description"}>
-                                <p>A medical portal for patients to solve their healthcare needs and take action</p>
-                                <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
-                                    Visit Website
-                                </a>
-                            </div>
+                    <div
+                        className={activeProject === "myCare" ? "active-project-line" : "project-line"}
+                        onMouseEnter={() => {
+                            setProjectLink("https://mycare.onrender.com");
+                            dispatch(setProject("myCare"));
+                        }}
+                    >
+                        <h3 className="project-title">MyCare</h3>
+                        <i className="fa-solid fa-chevron-left arrow" />
+                        <img src={`https://skillicons.dev/icons?i=python&theme=${iconTheme}`} alt="icon" className="icon1" />
+                        <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon2" />
+                        <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon3" />
+                        <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon4" />
+                        <img src={`https://skillicons.dev/icons?i=postgres&theme=${iconTheme}`} alt="icon" className="icon5" />
+                        <div className={activeProject === "myCare" ? "active-project-description" : "project-description"}>
+                            <p>A medical portal for patients to solve their healthcare needs and take action</p>
+                            <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
+                                Visit Website
+                            </a>
                         </div>
                     </div>
                     <hr />
-                    <div>
-                        <div
-                            className={activeProject === "Banter" ? "active-project-line" : "project-line"}
-                            onMouseEnter={() => {
-                                setProjectLink("https://bit-of-banter.onrender.com/");
-                                dispatch(setProject("Banter"));
-                            }}>
-                            <h3 className="project-title">Banter</h3>
-                            <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={`https://skillicons.dev/icons?i=python&theme=${iconTheme}`} alt="icon" className="icon1" />
-                            <img src={`https://skillicons.dev/icons?i=babel&theme=${iconTheme}`} alt="icon" className="icon2" />
-                            <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon3" />
-                            <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon4" />
-                            <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon5" />
-                            <div className={activeProject === "Banter" ? "active-project-description" : "project-description"}>
-                                <p>A Slack clone where users can chat through direct messages and channels</p>
-                                <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
-                                    Visit Website
-                                </a>
-                            </div>
+                    <div
+                        className={activeProject === "Banter" ? "active-project-line" : "project-line"}
+                        onMouseEnter={() => {
+                            setProjectLink("https://bit-of-banter.onrender.com/");
+                            dispatch(setProject("Banter"));
+                        }}>
+                        <h3 className="project-title">Banter</h3>
+                        <i className="fa-solid fa-chevron-left arrow" />
+                        <img src={`https://skillicons.dev/icons?i=python&theme=${iconTheme}`} alt="icon" className="icon1" />
+                        <img src={`https://skillicons.dev/icons?i=babel&theme=${iconTheme}`} alt="icon" className="icon2" />
+                        <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon3" />
+                        <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon4" />
+                        <img src={`https://skillicons.dev/icons?i=flask&theme=${iconTheme}`} alt="icon" className="icon5" />
+                        <div className={activeProject === "Banter" ? "active-project-description" : "project-description"}>
+                            <p>A Slack clone where users can chat through direct messages and channels</p>
+                            <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
+                                Visit Website
+                            </a>
                         </div>
                     </div>
                     <hr />
-                    <div>
-                        <div
-                            className={activeProject === "AirBn2B" ? "active-project-line" : "project-line"}
-                            onMouseEnter={() => {
-                                setProjectLink("https://airbn2b.onrender.com/");
-                                dispatch(setProject("AirBn2B"));
-                            }}>
-                            <h3 className="project-title">AirBn2B</h3>
-                            <i className="fa-solid fa-chevron-left arrow" />
-                            <img src={`https://skillicons.dev/icons?i=js&theme=${iconTheme}`} alt="icon" className="icon1" />
-                            <img src={`https://skillicons.dev/icons?i=express&theme=${iconTheme}`} alt="icon" className="icon2" />
-                            <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon3" />
-                            <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon4" />
-                            <img src={`https://skillicons.dev/icons?i=sequelize&theme=${iconTheme}`} alt="icon" className="icon5" />
-                            <div className={activeProject === "AirBn2B" ? "active-project-description" : "project-description"}>
-                                <p>A web app clone of Airbnb, made for intuitive and simple access to vacation rentals</p>
-                                <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
-                                    Visit Website
-                                </a>
-                            </div>
+                    <div
+                        className={activeProject === "AirBn2B" ? "active-project-line" : "project-line"}
+                        onMouseEnter={() => {
+                            setProjectLink("https://airbn2b.onrender.com/");
+                            dispatch(setProject("AirBn2B"));
+                        }}>
+                        <h3 className="project-title">AirBn2B</h3>
+                        <i className="fa-solid fa-chevron-left arrow" />
+                        <img src={`https://skillicons.dev/icons?i=js&theme=${iconTheme}`} alt="icon" className="icon1" />
+                        <img src={`https://skillicons.dev/icons?i=express&theme=${iconTheme}`} alt="icon" className="icon2" />
+                        <img src={`https://skillicons.dev/icons?i=react&theme=${iconTheme}`} alt="icon" className="icon3" />
+                        <img src={`https://skillicons.dev/icons?i=redux&theme=${iconTheme}`} alt="icon" className="icon4" />
+                        <img src={`https://skillicons.dev/icons?i=sequelize&theme=${iconTheme}`} alt="icon" className="icon5" />
+                        <div className={activeProject === "AirBn2B" ? "active-project-description" : "project-description"}>
+                            <p>A web app clone of Airbnb, made for intuitive and simple access to vacation rentals</p>
+                            <a href={projectLink} target="_blank" rel="noopener noreferrer" className="website-button">
+                                Visit Website
+                            </a>
                         </div>
                     </div>
                 </div>
