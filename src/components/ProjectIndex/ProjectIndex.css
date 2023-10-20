@@ -289,11 +289,11 @@
     }
 
     .project-line:hover {
-        padding-bottom: calc(39.375vw - 290px);
+        padding-bottom: calc(150px);
     }
 
     .active-project-line {
-        padding-bottom: calc(39.375vw - 290px);
+        padding-bottom: calc(150px);
     }
 
     .project-description {
@@ -306,7 +306,8 @@
 
     .active-project-description>p,
     .project-description>p {
-        padding: 10px 0;
+        padding-top: 20px;
+        padding-bottom: 30px;
     }
 }
 

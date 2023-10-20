@@ -31,7 +31,8 @@ function ProjectIndex({ visibility }) {
                             onMouseEnter={() => {
                                 setProjectLink("https://mycare.onrender.com");
                                 dispatch(setProject("myCare"));
-                            }}>
+                            }}
+                        >
                             <h3 className="project-title">MyCare</h3>
                             <i className="fa-solid fa-chevron-left arrow" />
                             <img src={`https://skillicons.dev/icons?i=python&theme=${iconTheme}`} alt="icon" className="icon1" />
