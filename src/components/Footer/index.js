@@ -30,7 +30,10 @@ function Footer() {
                 >
                     <div className='nav-link'>
                         <h2
-                            onClick={() => changePage("about")}
+                            onClick={() => {
+                                setVisibility(false);
+                                changePage("about");
+                            }}
                         >
                             About
                         </h2>
@@ -43,6 +46,7 @@ function Footer() {
                         <h2
                             onClick={() => {
                                 dispatch(setProject(""));
+                                setVisibility(false);
                                 changePage("home");
                             }}
                         >
@@ -55,7 +59,10 @@ function Footer() {
                 >
                     <div className='nav-link'>
                         <h2
-                            onClick={() => changePage("reachOut")}
+                            onClick={() => {
+                                setVisibility(false);
+                                changePage("reachOut");
+                            }}
                         >
                             Contact
                         </h2>

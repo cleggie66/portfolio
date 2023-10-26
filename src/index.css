@@ -145,10 +145,30 @@
 
 
 /* iPad Pro and Small Screens */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .pre {
+        top: -100vh;
+    }
+
+    .active {
+        top: 150px;
+    }
+
+    .post {
+        top: 400px;
+    }
+}
 
 /* iPads and Tablets */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .pre {
+        top: -100vh;
+    }
+
+    .active {
+        top: 200px;
+    }
+}
 
 /* iPhones and Phones */
 @media (max-width: 480px) {
@@ -158,9 +178,5 @@
 
     .active {
         top: 30px;
-    }
-
-    .post {
-        top: 300px;
     }
 }
