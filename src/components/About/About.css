@@ -75,6 +75,18 @@
     .about-page-text {
         font-size: 22px;
     }
+
+    .about-page-top {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    .about-profile-image-container {
+        min-width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }
 
 /* iPhones and Phones */
@@ -83,14 +95,16 @@
         margin-top: 0;
     }
 
-    .about-page-top {
-        flex-direction: column;
+    .about-page-title {
+        font-size: 22px;
+    }
+
+    .about-page-text {
+        font-size: 18px;
     }
 
     .about-profile-image-container {
-        min-width: 150px;
-        height: 150px;
-        margin-bottom: 20px;
-        margin-right: 0;
+        min-width: 100px;
+        height: 100px;
     }
 }

@@ -145,3 +145,37 @@
 #dark .reach-out-email:hover {
     color: var(--dark-blue);
 }
+
+/* iPad Pro and Small Screens */
+@media (max-width: 1024px) {
+    .reach-out-page {
+        width: 90vw;
+    }
+
+    .reach-out-form>input {
+        width: 80%;
+    }
+
+    .reach-out-form>textarea {
+        width: 80%;
+    }
+
+    .reach-out-button {
+        width: 80%;
+    }
+}
+
+/* iPads and Tablets */
+@media (max-width: 768px) {}
+
+/* iPhones and Phones */
+@media (max-width: 480px) {
+    .contact-icons {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .reach-out-page>h2 {
+        font-size: 32px;
+    }
+}
