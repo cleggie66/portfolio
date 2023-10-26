@@ -1,16 +1,67 @@
 
-import { setCursor, setTheme } from "../../store/settings";
+import { setCursor, setProject, setTheme } from "../../store/settings";
 import { useDispatch, useSelector } from "react-redux";
 
 import "./Footer.css"
+import { useState } from "react";
+import { resetPage, setPage } from "../../store/viewing";
 
 function Footer() {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    const [visibility, setVisibility] = useState(true);
+
     const settingsState = useSelector(state => state.settings);
     const theme = settingsState.theme;
     const cursor = settingsState.cursor;
+
+    const changePage = (page) => {
+        dispatch(setPage(page));
+
+        setTimeout(() => {
+            dispatch(resetPage())
+        }, 1000);
+    };
+
     return (
         <>
+            <div className={visibility ? "mobile-menu-bg" : "mobile-menu-bg-hidden"}>
+                <div
+                    className='nav-item'
+                >
+                    <div className='nav-link'>
+                        <h2
+                            onClick={() => changePage("about")}
+                        >
+                            About
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    className='nav-item'
+                >
+                    <div className='nav-link'>
+                        <h2
+                            onClick={() => {
+                                dispatch(setProject(""));
+                                changePage("home");
+                            }}
+                        >
+                            Projects
+                        </h2>
+                    </div>
+                </div>
+                <div
+                    className='nav-item'
+                >
+                    <div className='nav-link'>
+                        <h2
+                            onClick={() => changePage("reachOut")}
+                        >
+                            Contact
+                        </h2>
+                    </div>
+                </div>
+            </div>
             <div className="site-settings">
                 {theme === "dark" && (
                     <i
@@ -40,7 +91,9 @@ function Footer() {
                     <i className="fa-solid fa-file" />
                 </a>
             </div>
-            <div className="mobile-nav-bars">
+            <div
+                className="mobile-nav-bars"
+                onClick={() => setVisibility(!visibility)}>
                 <i
                     className="fa-solid fa-bars"
                 />
