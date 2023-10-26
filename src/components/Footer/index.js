@@ -104,7 +104,6 @@ function Footer() {
                 <i
                     className="fa-solid fa-bars"
                 />
-
             </div>
         </>
     )

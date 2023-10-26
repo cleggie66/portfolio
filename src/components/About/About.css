@@ -54,3 +54,43 @@
     justify-content: center;
     margin-right: 50px;
 }
+
+/* iPad Pro and Small Screens */
+@media (max-width: 1024px) {
+    .about-page {
+        width: 90vw;
+    }
+
+    .about-page-title {
+        font-size: 32px;
+    }
+
+    .about-page-text {
+        font-size: 22px;
+    }
+}
+
+/* iPads and Tablets */
+@media (max-width: 768px) {
+    .about-page-text {
+        font-size: 22px;
+    }
+}
+
+/* iPhones and Phones */
+@media (max-width: 480px) {
+    .about-page {
+        margin-top: 0;
+    }
+
+    .about-page-top {
+        flex-direction: column;
+    }
+
+    .about-profile-image-container {
+        min-width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
